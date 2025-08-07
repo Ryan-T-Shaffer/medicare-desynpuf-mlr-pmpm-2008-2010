@@ -3,7 +3,7 @@ This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KP
  
 
 # Project Background
-Backround about the company, including the industry, active years, business model, and key business metrics. Explain this from the POV of a data analyst who is working at the company.
+Using CMS DESYNPUF (5 % Medicare sample), I built a dashboard that lets U.S. health plans benchmark Cost PMPM, Claim PMPM, and MLR trends. I treated myself as an in‑house analyst at a healthcare‑analytics firm to frame the relevant business questions.
 
 Insights and recommendations are provided on the following key areas:
 
