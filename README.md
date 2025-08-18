@@ -3,7 +3,7 @@ This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KP
  
 
 # Project Background
-Using CMS DESYNPUF (5 % Medicare sample), I built a dashboard that lets U.S. health plans benchmark Cost PMPM, Claim PMPM, and MLR trends. I treated myself as an in‑house analyst at a healthcare‑analytics firm to frame the relevant business questions.
+Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year Cost PMPM, Claim PMPM, and MLR trends across Medicare service lines and five distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
 
 Insights and recommendations are provided on the following key areas:
 
