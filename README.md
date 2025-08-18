@@ -7,6 +7,9 @@ Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that 
 
 Insights and recommendations are provided on the following key areas:
 
+***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 400–500% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Medicare’s claim costs are covered by multiple sources—primarily payroll taxes and general federal revenues, along with beneficiary premiums—so an MLR calculated with premiums as the denominator can legitimately exceed 100%. (Note: Medicare Advantage plans not availible in this dataset follow a commercial-style MLR with an 85% minimum; the 400–500% figures apply only to this premium-only calculation for Medicare.)
+
+
 - **Category 1:** 
 - **Category 2:** 
 - **Category 3:** 
