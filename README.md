@@ -3,14 +3,11 @@ This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KP
  
 
 # Project Background
-Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year Cost PMPM, Claim PMPM, and MLR trends across Medicare service lines and five distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
+Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) Cost PMPM, Claim PMPM, and MLR trends across Medicare service lines and five distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
 
-Insights and recommendations are provided on the following key areas:
+***Insights and recommendations are provided on the following key areas***:
 
-***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 400–500% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Medicare’s claim costs are covered by multiple sources—primarily payroll taxes and general federal revenues, along with beneficiary premiums—so an MLR calculated with premiums as the denominator can legitimately exceed 100%. (Note: Medicare Advantage plans not availible in this dataset follow a commercial-style MLR with an 85% minimum; the 400–500% figures apply only to this premium-only calculation for Medicare.)
-
-
-- **Category 1:** 
+- **:** 
 - **Category 2:** 
 - **Category 3:** 
 - **Category 4:** 
@@ -44,6 +41,7 @@ Explain the overarching findings, trends, and themes in 2-3 sentences here. This
 [Visualization, including a graph of overall trends or snapshot of a dashboard]
 
 
+***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Medicare’s claim costs are covered by multiple sources—primarily payroll taxes and general federal revenues, along with beneficiary premiums—so an MLR calculated with premiums as the denominator can legitimately exceed well over 100%. (Note: Medicare Advantage plans not available in this dataset follow a commercial-style MLR with an 85% minimum; the 400–500% figures apply only to this premium-only calculation for Medicare.)
 
 # Insights Deep Dive
 ### Category 1:
