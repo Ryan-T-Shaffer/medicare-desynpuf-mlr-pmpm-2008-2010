@@ -29,11 +29,10 @@ The database structure as seen below for CMS 2008-2010 DE-SynPUF consists of 4 t
 - **carrier_claims:**
 - **prescript_drug_events:**
 
+ERD for CMS 2008-2010 DE-SynPUF
 [<img src="./assets/desynpuf_medicare_db.png" alt="Entity Relationship Diagram" width="800">](./assets/erd.png)
 
-
-
-
+***Disclaimer:*** the outpatient_claims and carrier_claims tables were shortened in the ERD diagram in order to fit in a singular screenshot because each table had 140+ columns. Anywhere a column ends with "_..." means there were columns removed in order to save space because the names changed incrementally like "_1", "_2" , "_3". 
 
 # Executive Summary
 
