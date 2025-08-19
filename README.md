@@ -9,8 +9,8 @@ Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that 
 
 - ***MLR Trends by Service Line:*** YoY MLR by service line and in total, highlighting where claim costs are rising fastest relative to premium revenue using %Δ YoY to compare MLR values. Underlying percent distirbutions of claims cost also evaluated. 
 - ***MLR Trends by Race Group & Service Line:*** YoY MLR comparison across race groups within each service line to surface segment-level takeaways using %Δ YoY to compare MLR values. 
-- ***Cost PMPM Trends:*** YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions.
-- ***Count PMPM Trends:*** YoY change in Count PMPM by service line, showing how service/claim counts **per member-month** are changing as well as underlying percent distributions.
+- ***Cost PMPM Trends:*** YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions of this metric.
+- ***Count PMPM Trends:*** YoY change in Count PMPM by service line, showing how service/claim counts **per member-month** are changing as well as underlying percent distributions of this metric.
 
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
