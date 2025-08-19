@@ -4,7 +4,7 @@ This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KP
 # Project Background
 Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) Cost PMPM, Count PMPM, and MLR trends across different Medicare service lines and five distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
 
-*Insights and recommendations are provided on the following key areas*:
+*How insights are evaluated in the report on the following key areas*:
 
 - **MLR Trends by Service Line:** YoY MLR by service line and in total, highlighting where claim costs are rising fastest relative to premium revenue using %Δ YoY to compare values. Underlying percent distirbutions of claims cost also evaluated. 
 - **MLR Trends by Race Group & Service Line:** YoY MLR comparison across race groups within each service line to surface segment-level takeaways using %Δ YoY to compare values. 
