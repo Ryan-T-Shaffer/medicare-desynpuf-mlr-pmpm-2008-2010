@@ -29,7 +29,8 @@ The companies main database structure as seen below consists of four tables: tab
 - **Table 4:**
 - **Table 5:**
 
-![Entity Relationship Diagram](./assets/erd.svg)
+[<img src="./assets/erd.png" alt="Entity Relationship Diagram" width="800">](./assets/erd.png)
+
 
 
 
