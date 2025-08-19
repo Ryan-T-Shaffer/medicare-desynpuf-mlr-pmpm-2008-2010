@@ -7,9 +7,11 @@ Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that 
 
 ***Insights and recommendations are provided on the following key areas***:
 
-- **KPI Trend Analysis (Service-Line):** Evaluation of Cost PMPM, Count PMPM, and MLR values YoY from 2008-2010 by individual service lines as well as the Total of all service lines, focusing on the story told by YoY %Δ for each KPI value.
-- **KPI Underlying Distribution Analysis:** An assessment using percent disribution of the numerator and denominator values in each of the KPI equations for Cost PMPM, Count PMPM, and MLR to identify if there is a change in the distribution of a numerator or denominator value YoY that is signiifantly contirbuting to why an overall KPI value is changing. 
-- **KPI Trend Analysis (Rcae Group + Service Line):** An even more in depth evaluation of the KPIs listed in KPI Trend Analysis that evaluates how the race groups black, caucasian, hispanic, and other compare to one another YoY using different service lines. 
+***MLR Trends by Service Line:*** YoY MLR by service line and in total, highlighting where claim costs are rising fastest relative to premium revenue.
+***MLR Trends by Race Group & Service Line:*** YoY MLR comparison across race groups within each service line to surface segment-level hotspots.
+***Cost PMPM Trends:*** YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are shifting.
+***Count PMPM Trends:*** YoY change in Count PMPM by service line, showing how service/claim counts **per member-month** are shifting.
+
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
