@@ -4,7 +4,7 @@ This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KP
 # Project Background
 Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) Cost PMPM, Count PMPM, and MLR trends across different Medicare service lines and five distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
 
-***Insights and recommendations are provided on the following key areas***:
+*Insights and recommendations are provided on the following key areas*:
 
 - **MLR Trends by Service Line:** YoY MLR by service line and in total, highlighting where claim costs are rising fastest relative to premium revenue using %Δ YoY to compare values. Underlying percent distirbutions of claims cost also evaluated. 
 - **MLR Trends by Race Group & Service Line:** YoY MLR comparison across race groups within each service line to surface segment-level takeaways using %Δ YoY to compare values. 
@@ -17,17 +17,17 @@ The SQL queries used to inspect and clean the data for this analysis can be foun
 
 Targed SQL queries regarding various business questions can be found here [link].
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+An interactive PowerBI dashboard used to report and explore sales trends can be found here [link].
 
 
 
 # Data Structure & Initial Checks
 
-The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
-- **Table 2:**
-- **Table 3:**
-- **Table 4:**
-- **Table 5:**
+The database structure as seen below for CMS 2008-2010 DE-SynPUF consists of 4 tables: beneficiary_summary, outpatient_claims, carrier_claims, and prescript_drug_events, with a total row count of 228.6M records being used acrossed all 4 tables. A description of each table is as follows:
+- **beneficiary_summary:**
+- **outpatient_claims:**
+- **carrier_claims:**
+- **prescript_drug_events:**
 
 [<img src="./assets/desynpuf_medicare_db.png" alt="Entity Relationship Diagram" width="800">](./assets/erd.png)
 
