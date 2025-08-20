@@ -27,7 +27,7 @@ The database structure as seen below for CMS 2008-2010 DE-SynPUF consists of 4 t
 - **beneficiary_summary:** The table that acts as the reference table for the entire dataset. All JOINS occour when this table is used to connect a patient to their healthcare claims in 1 of the other 3 tables. Each row in this datatset when seperated by year represents an indiviudal patient who is a part of the study. JOINS to the other tables are done by using the composite PRIMARY KEY (year,DESYNPUF_ID). This table broadly consist of the following information in this order: basic but differentiable patient information, months of purchased coverage for different parts of Medicare for that year, deadly health conditions the patient currently has, and different yearly payment and remibursement amounts. There are a total of 2.2-2.3M patients in this study YoY.
 - **outpatient_claims:** A table that is under part B of Medicare.  
 - **carrier_claims:** A table that is under part B of Medicare. 
-- **prescript_drug_events:** A table that is under part D of Medicare. 
+- **prescript_drug_events:** The table that is responsible for part D of Medicare. 
 
 ERD for CMS 2008-2010 DE-SynPUF
 [<img src="./assets/desynpuf_medicare_db.png" alt="Entity Relationship Diagram" width="800">](./assets/erd.png)
