@@ -4,6 +4,8 @@ This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KP
 # Project Background
 Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) Cost PMPM, Count PMPM, and MLR trends across different Medicare service lines and five distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
 
+Rewrite this
+
 *How insights are evaluated in the report on the following key areas*:
 
 - **MLR Trends by Service Line:** YoY MLR by service line and in total, highlighting where claim costs are rising fastest relative to premium revenue using %Δ YoY to compare values. Underlying percent distirbutions of claims cost also evaluated. 
@@ -13,7 +15,7 @@ Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that 
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
-Targed SQL queries regarding various business questions can be found here [link].
+Targeted SQL queries regarding various business questions can be found here [link].
 
 An interactive PowerBI dashboard used to report and explore sales trends can be found here [link].
 
@@ -35,7 +37,7 @@ ERD for CMS 2008-2010 DE-SynPUF
 
 ### Overview of Findings
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
+From 2008→2009, Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) rose modestly; from 2009→2010 they dropped sharply (−37.8%, −35.8%, −45.5%). Taken together, the 2010 declines indicate lower utilization, spend per member, and a lower claims-to-revenue ratio—consistent with either positive reasons (prevention, unit-price reductions, fewer complications, shift to home care), negative reasons (higher patient cost sharing, tighter prior auth, narrower networks, delayed claims), or a combination of both. The report decomposes these KPIs by service line, race group, and their component measures to identify what is driving this change and evaluate how Medicare is performing. 
 
 [![Executive summary](./assets/executive_summary.png)](./assets/executive_summary.png)
 
