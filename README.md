@@ -1,17 +1,14 @@
-# Medicare-DESYNPUF-DA-Report-1
-This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KPIs per member per month (PMPM) Medical Cost, PMPM Claim Count, and Medical Loss Ratio (MLR).
-
 # Project Background
-Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) Cost PMPM, Count PMPM, and MLR trends across different Medicare service lines and 5 distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
+The CMS DE-SynPUF Medicare dataset was used to present an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines and five race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
 
-Rewrite this
+A sentence of space was left in the project background for whatever POV this project wants to be framed in later. 
 
 *How insights are evaluated in the report on the following key areas*:
 
 - **MLR Trends by Service Line:** How much money Medicare's spending yearly on healthcare compared to the amount money Medicare is charging in premiums to patients to pay for it. Service lines analyzed in this report are outpatient claims (OP), carrier claims (PROF), prescription drug events (RX), and the total of these 3. 
 - **MLR Trends by Race Group & Service Line:** An insight going a segemnt deeper analyzing MLR values at a specific service line by determining the MLR values for specific race groups (all_races, caucsian, black, hispanic, and other). 
-- **Cost PMPM Trends:** YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions of this metric.
-- **Count PMPM Trends:** YoY change in Count PMPM by service line, showing how service/claim counts per member-month are changing as well as underlying percent distributions of this metric.
+- **Cost PMPM Trends:** Cost PMPM is the average medical spending per enrolled member per month. This metric shows how much the plan pays on average by service line and overall, for covered care per member each month.
+- **Count PMPM Trends:** Count PMPM is the average number of claims per enrolled member per month. This metric shows how many claims on average by service line and in total, each member uses per month.
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
@@ -76,6 +73,8 @@ YoY MLR comparison across race groups within each service line to surface segmen
 
 ### Category 3:
 
+YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions of this metric.
+
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
 * **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
@@ -88,6 +87,8 @@ YoY MLR comparison across race groups within each service line to surface segmen
 
 
 ### Category 4:
+
+YoY change in Count PMPM by service line, showing how service/claim counts per member-month are changing as well as underlying percent distributions of this metric.
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
