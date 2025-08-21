@@ -37,7 +37,7 @@ ERD for CMS 2008-2010 DE-SynPUF
 
 ### Overview of Findings
 
-From 2008→2009, Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) rose modestly; from 2009→2010 they dropped sharply (−37.8%, −35.8%, −45.5%). Taken together, the 2010 declines indicate lower utilization, spend per member, and a lower claims-to-revenue ratio—consistent with either positive reasons (prevention, unit-price reductions, fewer complications, shift to home care), negative reasons (higher patient cost sharing, tighter prior auth, narrower networks, delayed claims), or a combination of both. The report decomposes these KPIs by service line, race group, and their component measures to identify what is driving this change and evaluate how Medicare is performing. 
+From 2008→2009, Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) rose modestly; from 2009→2010 they dropped sharply (−37.8%, −35.8%, −45.5%). The 2010 declines indicate lower utilization, spend per member, and a lower claims-to-revenue ratio—consistent with either positive reasons (prevention, unit-price reductions, fewer complications, shift to home care), negative reasons (higher patient cost sharing, tighter prior auth, narrower networks, delayed claims), or a combination of both. The report decomposes these KPIs by service line, race group, and their component measures to identify what is driving this change and evaluate how Medicare is performing. 
 
 [![Executive summary](./assets/executive_summary.png)](./assets/executive_summary.png)
 
