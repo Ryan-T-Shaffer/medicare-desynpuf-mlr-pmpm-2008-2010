@@ -5,10 +5,10 @@ A sentence of space was left in the project background for whatever POV this pro
 
 *How insights are evaluated in the report on the following key areas*:
 
-- **MLR Trends by Service Line:** How much money Medicare's spending yearly on healthcare compared to the amount money Medicare is charging in premiums to patients to pay for it. Service lines analyzed in this report are outpatient claims (OP), carrier claims (PROF), prescription drug events (RX), and the total of these 3. 
-- **MLR Trends by Race Group & Service Line:** An insight going a segemnt deeper analyzing MLR values at a specific service line by determining the MLR values for specific race groups (all_races, caucsian, black, hispanic, and other). 
-- **Cost PMPM Trends:** Cost PMPM is the average medical spending per enrolled member per month. This metric shows how much the plan pays on average by service line and overall, for covered care per member each month.
-- **Count PMPM Trends:** Count PMPM is the average number of claims per enrolled member per month. This metric shows how many claims on average by service line and in total, each member uses per month.
+- **MLR Trends by Service Line:** How much money Medicare's spending yearly on healthcare compared to the amount money Medicare is charging in premiums to patients to pay for it. Service lines analyzed in this report are outpatient claims (OP), carrier claims (PROF), prescription drug events (RX), and the total of them. 
+- **MLR Trends by Race Group & Service Line:** MLR by race group (all_races, Caucasian, Black, Hispanic, Other) within each service line to find deeper segment-level differences.
+- **Cost PMPM Trends:** This metric shows how much Medicare spends on average for care for every enrolle each month, and is broken down by service line.
+- **Count PMPM Trends:** This metric shows how many claims on average each member uses per month in order to get care, and is broken down by service line.
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
