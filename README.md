@@ -8,8 +8,8 @@ Rewrite this
 
 *How insights are evaluated in the report on the following key areas*:
 
-- **MLR Trends by Service Line:** How much money Medicare's spending on healthcare compared to the amount money Medicare is charging in premiums to patients to pay for it. Service lines analyzed in this report are outpatient claims (OP), carrier claims (PROF), prescription drug events (RX), and the total of these 3. 
-- **MLR Trends by Race Group & Service Line:** YoY MLR comparison across race groups within each service line to surface segment-level takeaways using %Δ YoY to compare values. 
+- **MLR Trends by Service Line:** How much money Medicare's spending yearly on healthcare compared to the amount money Medicare is charging in premiums to patients to pay for it. Service lines analyzed in this report are outpatient claims (OP), carrier claims (PROF), prescription drug events (RX), and the total of these 3. 
+- **MLR Trends by Race Group & Service Line:** An insight going a segemnt deeper analyzing MLR values at a specific service line by determining the MLR values for specific race groups (all_races, caucsian, black, hispanic, and other). 
 - **Cost PMPM Trends:** YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions of this metric.
 - **Count PMPM Trends:** YoY change in Count PMPM by service line, showing how service/claim counts per member-month are changing as well as underlying percent distributions of this metric.
 
@@ -60,6 +60,8 @@ From 2008→2009, Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) rose mo
 
 
 ### Category 2:
+
+YoY MLR comparison across race groups within each service line to surface segment-level takeaways using %Δ YoY to compare values. 
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
