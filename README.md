@@ -1,5 +1,5 @@
 # Project Background
-The CMS DE-SynPUF Medicare dataset was used to present an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines and five race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
+The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines and five race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
 
 A sentence of space was left in the project background for whatever POV this project wants to be framed in later. 
 
