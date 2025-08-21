@@ -4,7 +4,6 @@ The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard t
 A sentence of space was left in the project background for whatever POV this project wants to be framed in later. 
 
 *How insights are evaluated in the report on the following key areas*:
-
 - **MLR Trends by Service Line:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging patients in premiums to pay for it. Service lines analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined total. 
 - **MLR Trends by Race Group & Service Line:** MLR by race group (all_races, Caucasian, Black, Hispanic, Other) analyzed within each service line to find deeper segment-level differences.
 - **Cost PMPM Trends:** Medicare's average spending on care for each patient every month, segmented by service line and race group.
@@ -19,7 +18,6 @@ An interactive PowerBI dashboard used to report and explore sales trends can be 
 # Data Structure & Initial Checks
 
 The database structure as seen below for the CMS DE-SynPUF Medicare dataset consists of 4 tables: beneficiary_summary, outpatient_claims, carrier_claims, and prescript_drug_events, with a total row count of [228.6 Million records](./assets/DE_SynPUF_table_records_distribution.png) being used acrossed all 4 tables. A description of each table is as follows:
-
 - **beneficiary_summary:** Each row represents an indiviudal patient in the study. This table can connect to any of the healthcare claims tables below with a JOIN on the columns year and DESYNPUF_ID. This table covers: basic patient information, months of enrollment by Medicare plan pt., the patient's chronic conditions, and different yearly payments and remibursement.
 - **outpatient_claims:** Each row is a unique claim from a patient in one of these areas: ER visits, same-day/ambulatory surgeries, hospital clinic visits, diagnostic testing, and rehab therapies. The table is under pt. B of Medicare. This table covers: physican and provider information, procedure codes, diagnosis codes, coinsurance and deductible payment amounts, and HCPCS cost codes. 
 - **carrier_claims:** This table of healthcare claims consist mainly of these specific categories: doctor office/clinic visits and check-ups, minor procedures and injections, lab/pathology tests, physician-office imaging, and physician-administered drugs. This table is also under part B of Medicare. Each row is a unique healthcare claim from a singular patient that is related to one of the categories listed above, and is identified in the database by the PK (CLM_FROM_DT, CLM_ID) which is just the claim date and claim id. The carrier_claims table columns consist of info about the claim, ICD claim diagnosis codes, physican info and provider tax number, HCPCS cost codes, payemnt amounts, deductible amounts, other payment amounts, and ICD line diagnosis codes. 
