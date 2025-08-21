@@ -37,7 +37,7 @@ ERD for CMS 2008-2010 DE-SynPUF
 
 Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
 
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
+[![Executive summary](./assets/executive_summary.png)](./assets/executive_summary.png)
 
 # Insights Deep Dive
 ### Category 1:
