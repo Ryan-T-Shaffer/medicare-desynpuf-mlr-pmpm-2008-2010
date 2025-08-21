@@ -7,8 +7,8 @@ A sentence of space was left in the project background for whatever POV this pro
 
 - **MLR Trends by Service Line:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging patients in premiums to pay for it. Service lines analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined total. 
 - **MLR Trends by Race Group & Service Line:** MLR by race group (all_races, Caucasian, Black, Hispanic, Other) analyzed within each service line to find deeper segment-level differences.
-- **Cost PMPM Trends:** This metric shows how much Medicare spends on average for care for every enrolle each month, and is broken down by service line.
-- **Count PMPM Trends:** This metric shows how many claims on average each member uses per month in order to get care, and is broken down by service line.
+- **Cost PMPM Trends:** Medicare's average spending on care for each patient every month, sgemented by service line and race group.
+- **Count PMPM Trends:** The number of claims on average each patient uses per month in order to get care, segmented by service line and race group.
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
