@@ -2,13 +2,13 @@
 This is a Data Analyst Report about the CMS DESYNPUF Medicare dataset for the KPIs per member per month (PMPM) Medical Cost, PMPM Claim Count, and Medical Loss Ratio (MLR).
 
 # Project Background
-Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) Cost PMPM, Count PMPM, and MLR trends across different Medicare service lines and five distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
+Using the CMS DE-SynPUF Medicare dataset, I built an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) Cost PMPM, Count PMPM, and MLR trends across different Medicare service lines and 5 distinct race groups. I approached the project as an in-house analyst at a healthcare-analytics firm to shape the insights delivered from business questions.
 
 Rewrite this
 
 *How insights are evaluated in the report on the following key areas*:
 
-- **MLR Trends by Service Line:** YoY MLR by service line and in total, highlighting where claim costs are rising fastest relative to premium revenue using %Δ YoY to compare values. Underlying percent distirbutions of claims cost also evaluated. 
+- **MLR Trends by Service Line:** How much money Medicare's spending on healthcare compared to the amount money Medicare is charging in premiums to patients to pay for it. Service lines analyzed in this report are outpatient claims (OP), carrier claims (PROF), prescription drug events (RX), and the total of these 3. 
 - **MLR Trends by Race Group & Service Line:** YoY MLR comparison across race groups within each service line to surface segment-level takeaways using %Δ YoY to compare values. 
 - **Cost PMPM Trends:** YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions of this metric.
 - **Count PMPM Trends:** YoY change in Count PMPM by service line, showing how service/claim counts per member-month are changing as well as underlying percent distributions of this metric.
@@ -43,6 +43,8 @@ From 2008→2009, Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) rose mo
 
 # Insights Deep Dive
 ### Category 1:
+
+- Analyzing MLR values by service line (OP, PROF, RX) and in total, highlighting how claims costs are changing relative to premium revenue aka how much money is Medicare spending on healthcare compared to the amount money Medicare is charging in premiums to pay for it.  are using. Additionally, using %Δ YoY to compare values MLR overtime. Lastly, the componet measure of MLR, claims cost, was evluated using percent distirbutions. 
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
