@@ -18,15 +18,16 @@ An interactive PowerBI dashboard used to report and explore sales trends can be 
 # Data Structure & Initial Checks
 
 The database structure as seen below for the CMS DE-SynPUF Medicare dataset consists of 4 tables: beneficiary_summary, outpatient_claims, carrier_claims, and prescript_drug_events, with a total row count of [228.6 Million records](./assets/DE_SynPUF_table_records_distribution.png) being used acrossed all 4 tables. A description of each table is as follows:
-- **beneficiary_summary:** Each row represents an indiviudal patient in the study. This table can connect to any of the healthcare claims tables below with a JOIN on the columns year and DESYNPUF_ID. This table covers: basic patient information, months of enrollment by Medicare plan pt., the patient's chronic conditions, and different yearly payments and remibursement.
+- **beneficiary_summary:** Each row represents an individual patient in the study. This table can connect to any of the healthcare claims tables below with a JOIN on the columns year and DESYNPUF_ID. This table covers: basic patient information, months of enrollment by Medicare plan pt., the patient's chronic conditions, and different yearly payments and reimbursement.
 - **outpatient_claims:** Each row is a unique claim from a patient in one of these areas: ER visits, same-day/ambulatory surgeries, hospital clinic visits, diagnostic testing, and rehab therapies. Each row in this table and the ones below are identified by a combo of claim ID and claim date. The table is under pt. B of Medicare. This table covers: physician and provider information, procedure codes, diagnosis codes, coinsurance and deductible payment amounts, and HCPCS cost codes.
 - **carrier_claims:** Each row is a unique claim from a patient in one of these areas: doctor office visits & imaging, minor procedures, pathology tests, and physician-administered drugs. This table is also under pt. B of Medicare. This table covers: claim info, ICD claim & line diagnosis codes, physician info, provider tax numbers, HCPCS cost codes, different types of payment amounts.
 - **prescript_drug_events:** Each row is a unique claim about a prescription drug order from a specific patient that was handled by the pharmacies. This table solely covers pt. D of Medicare. This table covers: the type of drug dispensed, the quantity, the day supply, the patient payment amount, and the gross drug cost.
 
+
 ERD for CMS 2008-2010 DE-SynPUF
 [<img src="./assets/desynpuf_medicare_db.png" alt="Entity Relationship Diagram" width="800">](./assets/erd.png)
 
-***Disclaimer:*** The outpatient_claims and carrier_claims tables were shortened in the ERD diagram in order to fit in a singular screenshot because each table had 80+ columns. Anywhere a column ends with "_..." means there were columns removed in order to save space because the names changed incrementally like "_1", "_2" , "_3". All columns removed from the ERD were non-essential.
+***Disclaimer:*** The outpatient_claims and carrier_claims tables had columns removed from the ERD diagram in order to fit in a singular screenshot because each table had 80+ columns. All columns removed were non-essential to the ERD.
 
 # Executive Summary
 
