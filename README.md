@@ -1,7 +1,7 @@
 # Project Background
 The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines and five race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
 
-A sentence of space was left in the project background for whatever POV this project wants to be framed in later. 
+A sentence of space was left in the project background for whatever POV this project wants to be framed in later. You are also missing a so what as to why you are analyzing these metrics and what this all means.
 
 *How insights are evaluated in the report on the following key areas*:
 - **MLR Trends by Service Line:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging patients in premiums to pay for it. Service lines analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined total. 
