@@ -1,13 +1,13 @@
 # Project Background
-The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines and five race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
+The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines (svc) and five race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
 
 A sentence of space was left in the project background for whatever POV this project wants to be framed in later. You are also missing a so what as to why you are analyzing these metrics and what this all means.
 
 *How insights are evaluated in the report on the following key areas*:
-- **MLR Trends by Service Line:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging patients in premiums to pay for it. Service lines analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined total. 
-- **MLR Trends by Race Group & Service Line:** MLR by race group (all_races, Caucasian, Black, Hispanic, Other) analyzed within each service line to find deeper segment-level differences.
-- **Cost PMPM Trends:** Medicare's average spending on care for each patient every month, segmented by service line and race group.
-- **Count PMPM Trends:** The number of claims on average each patient uses per month in order to get care, segmented by service line and race group.
+- **MLR Trends by SVC:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging patients in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined total. 
+- **MLR Trends by Race Group & SVC:** MLR by race group (all_races, Caucasian, Black, Hispanic, Other) analyzed within each service line to find deeper segment-level differences.
+- **Cost PMPM Trends:** Medicare's average spending on care for each patient every month, segmented by svc and race group.
+- **Count PMPM Trends:** The number of claims on average each patient uses per month in order to get care, segmented by svc and race group.
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
@@ -35,7 +35,7 @@ ERD for CMS 2008-2010 DE-SynPUF
 
 Add 1 more sentence related to the data analyst POV of the project, maybe tie in the so-what related to the data analyst POV that you still need to write. 
 
-In the Total service line (svc) group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) rose modestly from 2008→2009; then from 2009→2010 they dropped sharply (−37.8%, −35.8%, −45.5%). These sharp declines a crossed all KPIs happenend due to 1 of 3 influences: positive influences (prevention, unit-price reductions, fewer complications, shift to home care), negative influences (higher patient cost sharing, tighter prior authorization, narrower networks, delayed claims), or a combination of both. The report further decomposes these KPIs by individual svc, race groups, and their component measures to identify what kinds of influences are driving these changes and evaluate how Medicare is performing. 
+In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) rose modestly from 2008→2009; then from 2009→2010 they dropped sharply (−37.8%, −35.8%, −45.5%). These sharp declines a crossed all KPIs happenend due to 1 of 3 influences: positive influences (prevention, unit-price reductions, fewer complications, shift to home care), negative influences (higher patient cost sharing, tighter prior authorization, narrower networks, delayed claims), or a combination of both. The report further decomposes these KPIs by individual svc, race groups, and their component measures to identify what kinds of influences are driving these changes and evaluate how Medicare is performing. 
 
 [![Executive summary](./assets/executive_summary.png)](./assets/executive_summary.png)
 
