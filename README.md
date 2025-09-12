@@ -50,7 +50,7 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
   
 - Just like the svc Total, OP’s and PROF’s MLR values peaked in 2009 with values of 95.9% and 173.6%, then sharply fell off in 2010 to 47.2% and 97.2%. In 2010, MLR values decreased all around with Total, OP, PROF, and RX decreasing YoY -45.5%, -50.8%, -44.0%, and -43.2%.
   
-- Allowed cost is the amount Medicare spends each year on all beneficiaries' care and is the numerator component measure of MLR. The allowed cost distribution graph showed no matter the year, the average absolute YoY %Δ  in cost between svcs (OP,PROF,RX) was only 4.2%.
+- Allowed Cost is the amount Medicare spends each year on all beneficiaries' care and is the numerator component measure of MLR. The Allowed Cost graph showed that the distribution of cost between OP, PROF, and RX relative to eachother had an avg absolute YoY %Δ of only 4.2%.
 
 
 ***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Medicare’s claim costs are covered by multiple sources—primarily payroll taxes and general federal revenues, along with beneficiary premiums—so an MLR calculated with premiums as the denominator can legitimately exceed well over 100%.
