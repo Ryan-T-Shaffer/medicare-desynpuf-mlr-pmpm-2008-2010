@@ -1,13 +1,13 @@
 # Project Background
-The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines (svc) and five race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
+The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard that lets U.S. health plans benchmark year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines (svc) and 5 race groups. The analysis is framed from the perspective of an in-house healthcare-analytics analyst to align insights with business questions.
 
 A sentence of space was left in the project background for whatever POV this project wants to be framed in later. You are also missing a so what as to why you are analyzing these metrics and what this all means.
 
 *How insights are evaluated in the report on the following key areas*:
-- **MLR Trends by SVC:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging patients in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined total. 
-- **MLR Trends by Race Group & SVC:** MLR by race group (all_races, Caucasian, Black, Hispanic, Other) analyzed within each service line to find deeper segment-level differences.
-- **Cost PMPM Trends:** Medicare's average spending on care for each patient every month, segmented by svc and race group.
-- **Count PMPM Trends:** The number of claims on average each patient uses per month in order to get care, segmented by svc and race group.
+- **MLR Trends by SVC:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging beneficiaries in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined Total. 
+- **MLR Trends by Race Group & SVC:** MLR by race group (All Beneficiaries, Caucasian, Black, Hispanic, Other) analyzed within each svc to find deeper segment-level differences.
+- **Cost PMPM Trends:** Medicare's average spending on care for each beneficiary every month, segmented by svc and race group.
+- **Count PMPM Trends:** The number of claims on average each beneficiary uses per month in order to get care, segmented by svc and race group.
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
@@ -18,10 +18,10 @@ An interactive PowerBI dashboard used to report and explore sales trends can be 
 # Data Structure & Initial Checks
 
 The database structure as seen below for the CMS DE-SynPUF Medicare dataset consists of 4 tables: beneficiary_summary, outpatient_claims, carrier_claims, and prescript_drug_events, with a total row count of [228.6 Million records](./assets/DE_SynPUF_table_records_distribution.png) being used acrossed all 4 tables. A description of each table is as follows:
-- **beneficiary_summary:** Each row represents an individual patient in the study. This table can connect to any of the healthcare claims tables below with a JOIN on the columns year and DESYNPUF_ID. This table covers: basic patient information, months of enrollment by Medicare plan pt., the patient's chronic conditions, and different yearly payments and reimbursement.
-- **outpatient_claims:** Each row is a unique claim from a patient in one of these areas: ER visits, same-day/ambulatory surgeries, hospital clinic visits, diagnostic testing, and rehab therapies. The rows in this table and the tables below are identified by a combo of a claim ID and a claim date. The table is under pt. B of Medicare. This table covers: physician and provider information, procedure codes, diagnosis codes, coinsurance and deductible payment amounts, and HCPCS cost codes.
-- **carrier_claims:** Each row is a unique claim from a patient in one of these areas: doctor office visits & imaging, minor procedures, pathology tests, and physician-administered drugs. This table is also under pt. B of Medicare. This table covers: claim info, ICD claim & line diagnosis codes, physician info, provider tax numbers, HCPCS cost codes, different types of payment amounts.
-- **prescript_drug_events:** Each row is a unique claim about a prescription drug order from a specific patient that was handled by the pharmacies. This table solely covers pt. D of Medicare. This table covers: the type of drug dispensed, the quantity, the day supply, the patient payment amount, and the gross drug cost.
+- **beneficiary_summary:** Each row represents an individual beneficiary in the study. This table can connect to any of the healthcare claims tables below with a JOIN on the columns year and DESYNPUF_ID. This table covers: basic patient information, months of enrollment by Medicare plan pt., the patient's chronic conditions, and different yearly payments and reimbursement.
+- **outpatient_claims:** Each row is a unique claim from a beneficiary in one of these areas: ER visits, same-day/ambulatory surgeries, hospital clinic visits, diagnostic testing, and rehab therapies. The rows in this table and the tables below are identified by a combo of a claim ID and a claim date. The table is under pt. B of Medicare. This table covers: physician and provider information, procedure codes, diagnosis codes, coinsurance and deductible payment amounts, and HCPCS cost codes.
+- **carrier_claims:** Each row is a unique claim from a  beneficiary in one of these areas: doctor office visits & imaging, minor procedures, pathology tests, and physician-administered drugs. This table is also under pt. B of Medicare. This table covers: claim info, ICD claim & line diagnosis codes, physician info, provider tax numbers, HCPCS cost codes, different types of payment amounts.
+- **prescript_drug_events:** Each row is a unique claim about a prescription drug order from a specific  beneficiary that was handled by the pharmacies. This table solely covers pt. D of Medicare. This table covers: the type of drug dispensed, the quantity, the day supply, the patient payment amount, and the gross drug cost.
 
 
 ERD for CMS 2008-2010 DE-SynPUF
