@@ -42,8 +42,6 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 # Insights Deep Dive
 ### MLR by SVC:
 
-- Analyzing MLR values by service line (OP, PROF, RX) and in total, highlighting how claims costs are changing relative to premium revenue aka how much money is Medicare spending on healthcare compared to the amount money Medicare is charging in premiums to pay for it.  are using. Additionally, using %Δ YoY to compare values MLR overtime. Lastly, the componet measure of MLR, claims cost, was evluated using percent distirbutions. 
-
 - MLR in the Total svc group peaked at 301.0% in 2009 for money spent vs. premiums collected, a +2.1% YoY increase from 2008. From 2009 to 2010 Medicare’s Total MLR YoY dropped -45.5% to a final MLR of 164.2%.
 
 - The svc RX was the only svc with a decrease in MLR every year, -23.3%  from 08->09 and -43.2% from 09->10. This YoY decrease saw RX’s MLR fall from 552.2% in 2008 to 240.7% in 2010. 
@@ -55,7 +53,7 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 - Allowed cost is the amount Medicare spends each year on all beneficiaries' care and is the numerator component measure of MLR. The allowed cost distribution graph showed no matter the year, the average absolute YoY %Δ  in cost between svcs (OP,PROF,RX) was only 4.2%.
 
 
-***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Medicare’s claim costs are covered by multiple sources—primarily payroll taxes and general federal revenues, along with beneficiary premiums—so an MLR calculated with premiums as the denominator can legitimately exceed well over 100%. (Note: Medicare Advantage plans not available in this dataset follow a commercial-style MLR with an 85% minimum; the 200–300% figures apply only to this premium-only calculation for Medicare.)
+***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Medicare’s claim costs are covered by multiple sources—primarily payroll taxes and general federal revenues, along with beneficiary premiums—so an MLR calculated with premiums as the denominator can legitimately exceed well over 100%.
 
 [Visualization specific to category 1]
 
