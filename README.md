@@ -85,17 +85,17 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 
 ### Count PMPM by Race Group and SVC:
 
-YoY change in Count PMPM by service line, showing how service/claim counts per member-month are changing as well as underlying percent distributions of this metric.
+- Count PMPM uses the same denominator as Cost PMPM—member-months—but a different numerator (claim counts, not dollars). Even so, it mirrors the MLR/Cost PMPM pattern: PROF, OP, and Total peak in 2009 at 1.5, 0.3, and 3.4 claims PMPM, then drop sharply in 2010, while RX peaks earlier at 2.5 in 2008 and declines thereafter. In 2010, Count PMPM falls YoY across all service lines: Total −35.8%, OP −44.0%, PROF −36.1%, RX −39.7%.
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+- Claim Count is the annual total number of claims and serves as the numerator of Count PMPM. Across OP, PROF, and RX, its service-line share was stable, with a mean absolute YoY %Δ  of 3.5%.
 
-[Visualization specific to category 4]
+- PROF Count PMPM (Count where svc = PROFl) peaked at 1.5 claims PMPM in 2009—up +5% YoY from 2008—then fell -36.1% YoY in 2010 to 0.9 .
+
+- The decline in PROF Count PMPM is not explained by coverage duration: full-year Part B enrollment rose from 84.0% (2008) to 89.1% (2010) in this sample. This points to lower utilization per member, not a shrinking denominator.
+
+- Total Count PMPM by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at 3.3–3.4 claims PMPM, while Hispanic peaks higher at 3.8 (vs. AB 3.4). In 2010, all groups decline by a similar amount (YoY −34.8% to −35.9%)..
+  
+[![Insights Deep Dive](./assets/data_reads4.png)](./assets/data_reads4.png)
 
 
 
