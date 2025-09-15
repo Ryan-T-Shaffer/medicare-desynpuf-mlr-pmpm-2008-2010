@@ -55,7 +55,7 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 
 ***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums.
 
-[Visualization specific to category 1]
+[![Insights Deep Dive](./assets/data_reads1.png)](./assets/data_reads1.png)
 
 
 ### Category 2:
