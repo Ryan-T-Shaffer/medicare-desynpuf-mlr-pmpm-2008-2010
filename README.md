@@ -53,8 +53,7 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 - Allowed Cost is Medicare’s total annual spend on beneficiaries’ care and the numerator of MLR. Across OP, PROF, and RX, the relative distribution of Allowed Cost was stable, with a mean absolute YoY % change of 4.2%.
 
 
-***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Also MLR's less than 85% are also not errors because there are several pieces of pt. B Medicare, so pt. B premium revenue can fully cover ceartin SVCs like OP fully but this does not take into account the combined cost of OP and PROF. 
-
+***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. MLRs below 85% aren’t errors—Part B premiums can fully cover some service lines (e.g. OP), but this service-line view excludes the combined OP + PROF cost.
 [![Insights Deep Dive](./assets/data_reads1.png)](./assets/data_reads1.png)
 
 
