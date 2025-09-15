@@ -73,17 +73,14 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 
 ### Cost PMPM by Race Group and SVC:
 
-YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions of this metric.
+- Cost PMPM uses Allowed Cost as its numerator—the same claims-dollar numerator as MLR—divided by member-months. Because the numerator trends are shared, Cost PMPM largely mirrors the MLR pattern: PROF, OP, and Total peak in 2009 at 167.4, 92.4, and 359.8 PMPM, then drop sharply in 2010, while RX peaks earlier at 154.2 in 2008 and declines thereafter. In 2010, Cost PMPM fell YoY across all service lines: Total −37.8%, OP −43.6%, PROF −35.8%, RX −40.2%.
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+- Despite the sharp decline in Total Cost PMPM by 2010, the denominator (member-months) was not the driver. Full-year enrollment was stable to rising: 87.3% of beneficiaries had 12 months of Part B or Part D coverage in 2008, increasing to 92.1% in 2010.
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+- Segmenting by race shows the same pattern. Total Cost PMPM for AB, Black, Caucasian, and Hispanic is tightly clustered, peaking in 2009 at 358.9–371.5 PMPM. The Other group peaks lower at 326.1 (vs. AB 359.8) in 2009. In 2010, all groups decline by a similar amount (YoY −36.5% to −38%).
 
-[Visualization specific to category 3]
+
+[![Insights Deep Dive](./assets/data_reads3.png)](./assets/data_reads3.png)
 
 
 ### Count PMPM by Race Group and SVC:
