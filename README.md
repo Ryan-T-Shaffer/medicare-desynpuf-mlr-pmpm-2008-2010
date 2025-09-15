@@ -42,18 +42,18 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 # Insights Deep Dive
 ### MLR by SVC:
 
-- MLR in the Total svc group peaked at 301.0% in 2009 for money spent vs. premiums collected, a +2.1% YoY increase from 2008. From 2009 to 2010 Medicare’s Total MLR YoY dropped -45.5% to a final MLR of 164.2%.
+- Total MLR (MLR where svc = Total) peaked at 301.0% in 2009—up +2.1% YoY from 2008—then fell -45.5% YoY in 2010 to 164.2%.
 
-- The svc RX was the only svc with a decrease in MLR every year, -23.3%  from 08->09 and -43.2% from 09->10. This YoY decrease saw RX’s MLR fall from 552.2% in 2008 to 240.7% in 2010. 
+- The svc RX was the only svc with declines in MLR every year (-23.3% YoY 08->09 and -43.2% YoY 09->10). RX’s MLR fell from 552.2% (2008) to 240.7% in (2010). 
 
-- This fall in svc RX’s MLR can be partially attributed to an increase in the amount of beneficiaries enrolled in 12 months of pt. D Medicare coverage. In 2008, 53.2% of all beneficiaries in this sample were enrolled in 12 months of pt. D coverage and this increased to 74.7% in 2010. 
+- The decline in RX's MLR is partly attributable to more beneficiaries with 12 months of Pt. D coverage: full-year enrollment rose from 53.2% (2008) to 74.7% (2010) in this sample.
   
-- Just like the svc Total, OP’s and PROF’s MLR values peaked in 2009 with values of 95.9% and 173.6%, then sharply fell off in 2010 to 47.2% and 97.2%. In 2010, MLR values decreased all around with Total, OP, PROF, and RX decreasing YoY -45.5%, -50.8%, -44.0%, and -43.2%.
+- Just like the svc Total, OP’s and PROF’s MLR values peaked in 2009 at 95.9% and 173.6%, then fell in 2010 to 47.2% and 97.2%. In 2010, MLR declined across all service lines (YoY): Total −45.5%, OP −50.8%, PROF −44.0%, RX −43.2%.
   
-- Allowed Cost is the amount Medicare spends each year on all beneficiaries' care and is the numerator component measure of MLR. The Allowed Cost graph showed that the distribution of cost between OP, PROF, and RX relative to eachother had an avg absolute YoY %Δ of only 4.2%.
+- Allowed Cost is Medicare’s total annual spend on beneficiaries’ care and the numerator of MLR. Across OP, PROF, and RX, the relative distribution of Allowed Cost was stable, with a mean absolute YoY % change of 4.2%.
 
 
-***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. Medicare’s claim costs are covered by multiple sources—primarily payroll taxes and general federal revenues, along with beneficiary premiums—so an MLR calculated with premiums as the denominator can legitimately exceed well over 100%.
+***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums.
 
 [Visualization specific to category 1]
 
