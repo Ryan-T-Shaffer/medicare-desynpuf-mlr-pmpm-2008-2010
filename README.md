@@ -71,7 +71,7 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 [![Insights Deep Dive](./assets/data_reads2.png)](./assets/data_reads2.png)
 
 
-### Category 3:
+### Cost PMPM by Race Group and SVC:
 
 YoY change in Cost PMPM by service line, showing how total claim costs **per member-month** are changing as well the underlying percent distributions of this metric.
 
@@ -86,7 +86,7 @@ YoY change in Cost PMPM by service line, showing how total claim costs **per mem
 [Visualization specific to category 3]
 
 
-### Category 4:
+### Count PMPM by Race Group and SVC:
 
 YoY change in Count PMPM by service line, showing how service/claim counts per member-month are changing as well as underlying percent distributions of this metric.
 
