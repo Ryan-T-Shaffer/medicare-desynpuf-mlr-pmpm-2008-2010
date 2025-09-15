@@ -58,17 +58,16 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 [![Insights Deep Dive](./assets/data_reads1.png)](./assets/data_reads1.png)
 
 
-### Category 2:
+### MLR by Race Group and SVC:
 
-YoY MLR comparison across race groups within each service line to surface segment-level takeaways using %Δ YoY to compare values. 
+- Total MLR by race group: All Beneficiaries (AB), Black, Caucasian, and Hispanic are tightly clustered, peaking in 2009 at 301.0–305.2%. The Other group peaks lower at 272.7% (vs. AB 301%) in 2009. In 2010 all groups declined by a similar margin (YoY −44.1% to −45.6%).
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+- OP MLR by race group: AB, Black, Caucasian, and Hispanic are tightly clustered, peaking in 2009 at 90.8–97.8%; Other peaks lower at 81.5% (vs. AB 95.9%). In 2010, all groups declined by a similar amount (YoY −49.0% to −50.9%). 
+
+- PROF MLR by race group: The five groups are fairly evenly spaced, with inter-group ranges of ~15–32 points year over year. MLR peaked in 2009 at 144.5–176.9% (Other 144.5% vs. AB 173.6%). In 2010 all groups declined similarly (YoY −42.9% to −44.6%).
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+- RX MLR by race group: The Hispanic group’s MLR is consistently higher than the other four, with the widest gap in 2009 (526% vs. Black 451%, +75 pts). RX MLRs peak in 2008 (545.6–600.2%). Again, in 2010 all groups declined similarly (YoY −40.8% to −43.4%).
+
 
 [![Insights Deep Dive](./assets/data_reads2.png)](./assets/data_reads2.png)
 
