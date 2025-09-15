@@ -70,7 +70,7 @@ YoY MLR comparison across race groups within each service line to surface segmen
   
 * **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
 
-[Visualization specific to category 2]
+[![Insights Deep Dive](./assets/data_reads2.png)](./assets/data_reads2.png)
 
 
 ### Category 3:
