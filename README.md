@@ -102,14 +102,16 @@ Across the 3 KPIs, Medicare’s performance for beneficiaries appears to decline
 # Recommendations:
 
 Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
-
-### Medicare's overall performance (talk about the overall values being bad and what this means,  not the trends all pointing in the same direction?
   
-### The Underlying trends of the downward trajectories of the KPIs?
+### KPI trends by SVC
+
+Recommendation Further analyze the RX group to see why it is the only one that peaked in 2008
   
 ### Further Segmenting and digging deeper is not showing anything unexpected, recommended to take a step back before continuing?
   
-### Can we conclude specifc positive or negative impacts that explain the results of the data? 
+### Can we conclude specifc positive or negative impacts that explain the results of the data?
+
+### Medicare's overall performance (talk about what should be done in terms of big steps in order to combat this steep decline)?
   
 ### What is the next step that should be taken? 
 
