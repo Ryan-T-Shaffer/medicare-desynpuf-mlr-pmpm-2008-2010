@@ -4,7 +4,7 @@ The CMS DE-SynPUF Medicare dataset was used to create an interactive dashboard t
 A sentence of space was left in the project background for whatever POV this project wants to be framed in later. You are also missing a so what as to why you are analyzing these metrics and what this all means.
 
 *How insights are evaluated in the report on the following key areas*:
-- **MLR Trends by SVC:** The amount of money Medicare's spending yearly on healthcare compared to the amount Medicare's is charging beneficiaries in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined Total. 
+- **MLR Trends by SVC:** The amount of money Medicare spends yearly on healthcare compared to the amount Medicare charges beneficiaries in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined Total. 
 - **MLR Trends by Race Group & SVC:** MLR by race group (All Beneficiaries, Caucasian, Black, Hispanic, Other) analyzed within each svc to find deeper segment-level differences.
 - **Cost PMPM Trends:** Medicare's average spending on care for each beneficiary every month, segmented by svc and race group.
 - **Count PMPM Trends:** The number of claims on average each beneficiary uses per month in order to get care, segmented by svc and race group.
