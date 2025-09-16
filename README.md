@@ -50,7 +50,7 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
   
 - Just like the svc Total, OP’s and PROF’s MLR values peaked in 2009 at 95.9% and 173.6%, then fell in 2010 to 47.2% and 97.2%. In 2010, MLR declined across all service lines (YoY): Total −45.5%, OP −50.8%, PROF −44.0%, RX −43.2%.
   
-- Allowed Cost is Medicare’s total annual spend on beneficiaries’ care and the numerator of MLR. Across OP, PROF, and RX, the relative distribution of Allowed Cost was stable, with a mean absolute YoY % change of 4.2%.
+- Allowed Cost is Medicare’s total annual spending on beneficiaries’ care and the numerator of MLR. Across OP, PROF, and RX, the relative distribution of Allowed Cost was stable, with a mean absolute YoY %Δ of 4.2%.
 
 
 ***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. MLRs below 85% aren’t errors—Part B premiums can fully cover some service lines (e.g. OP), but this service-line view excludes the combined OP + PROF cost.
