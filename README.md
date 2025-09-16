@@ -89,11 +89,11 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 
 - Claim Count is the annual total number of claims and serves as the numerator of Count PMPM. Across OP, PROF, and RX, its service-line share was stable, with a mean absolute YoY %Δ  of 3.5%.
 
-- PROF Count PMPM (Count where svc = PROFl) peaked at 1.5 claims PMPM in 2009—up +5% YoY from 2008—then fell -36.1% YoY in 2010 to 0.9 .
+- PROF Count PMPM (Count where svc = PROFl) peaked at 1.5 claims PMPM in 2009—up +5% YoY from 2008—then fell -36.1% YoY in 2010 to 0.9.
 
 - The decline in PROF Count PMPM is not explained by coverage duration: full-year Part B enrollment rose from 84.0% (2008) to 89.1% (2010) in this sample. This points to lower utilization per member, not a shrinking denominator.
 
-- Total Count PMPM by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at 3.3–3.4 claims PMPM, while Hispanic peaks higher at 3.8 (vs. AB 3.4). In 2010, all groups decline by a similar amount (YoY −34.8% to −35.9%)..
+- Total Count PMPM by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at 3.3–3.4 claims PMPM, while Hispanic peaks higher at 3.8 (vs. AB 3.4). In 2010, all groups decline by a similar amount (YoY −34.8% to −35.9%).
   
 [![Insights Deep Dive](./assets/data_reads4.png)](./assets/data_reads4.png)
 
