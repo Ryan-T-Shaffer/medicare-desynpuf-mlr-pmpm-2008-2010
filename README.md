@@ -103,16 +103,15 @@ In the Total svc group Cost PMPM (+9.5%), Count PMPM (+6.3%), and MLR (+2.1%) ro
 
 Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+### Medicare's overall performance (talk about the overall values being bad and what this means,  not the trends all pointing in the same direction?
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+### The Underlying trends of the downward trajectories of the KPIs?
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+### Further Segmenting and digging deeper is not showing anything unexpected, recommended to take a step back before continuing?
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+### Can we conclude specifc positive or negative impacts that explain the results of the data? 
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
+### What is the next step that should be taken? 
 
 
 # Assumptions and Caveats:
