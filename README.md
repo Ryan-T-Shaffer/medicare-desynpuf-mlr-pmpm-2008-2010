@@ -31,9 +31,7 @@ ERD for CMS 2008-2010 DE-SynPUF
 
 ### Overview of Findings
 
-Add 1 more sentence related to the data analyst POV of the project, maybe tie in the so-what related to the data analyst POV that you still need to write. 
-
-Across the 3 KPIs, Medicare’s performance for beneficiaries declined significantly by 2010. Under the Total svc group, KPIs rose from 2008 to 2009 (MLR +2.1%, Cost PMPM +9.5%, Count PMPM +6.3%), then fell sharply from 2009 to 2010 (−45.5%, −37.8%, −35.8%), ending at MLR 164.2%, $223.8 PMPM, and 2.2 claims PMPM. The analysis below further decomposes these results by svc, race group, and component measures to distinguish if these drivers are beneficial (prevention, unit-price reductions, fewer complications, shifts to home care) or restrictive (higher cost sharing, tighter prior authorization, narrower networks, delayed claims). The report also evaluates accessibility and equity to determine whether impacts were uneven across groups and to guide targeted actions in outreach, transportation, and benefits counseling. 
+Across the three KPIs, Medicare’s performance for beneficiaries declined sharply by 2010. Under the Total group, KPIs rose from 2008→2009 (MLR +2.1%, Cost PMPM +9.5%, Count PMPM +6.3%) and then fell from 2009→2010 (−45.5%, −37.8%, −35.8%), ending at MLR 164.2%, $223.8 PMPM, and 2.2 claims PMPM. Accessibility contracted broadly in 2010. Count PMPM fell across svcs: Total −35.8%, OP −44.0%, PROF −36.1%, and RX −39.7%. Equity trends based on Cost and Count PMPM by race group moved in parallel but for different svcs; for example, the Other group had [lower equity](.\assets\lower_equity_rg_graphs.png) in Total/OP/PROF, while Hispanic had [greater equity](.\assets\greater_equity_rg_graphs.png) in RX. The analysis decomposes results by service line, race group, and component measures to distinguish beneficial vs. restrictive drivers (prevention, price cuts vs. cost sharing, prior authorization, networks, delayed claims) and to guide targeted actions in outreach, transportation, and benefits counseling.
 
 [![Executive summary](./assets/executive_summary.png)](./assets/executive_summary.png)
 
