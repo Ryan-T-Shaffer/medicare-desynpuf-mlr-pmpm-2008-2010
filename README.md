@@ -97,7 +97,7 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we recommend the Secretary’s Office and the Office of Policy & Planning consider the following:
   
 ### KPI trends by SVC
 
