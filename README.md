@@ -91,7 +91,7 @@ Across the 3 KPIs, Medicare’s performance for beneficiaries declined significa
 
 - The decline in PROF Count PMPM is not explained by coverage duration: full-year Part B enrollment rose from 84.0% (2008) to 89.1% (2010) according to the [Pt. B Member Months Coverage-Length Distribution graph](./assets/part_b_distribution_graph.png). This points to lower utilization per member, not a shrinking denominator.
 
-- [Total Count PMPM](./assets/total_cost_pmpm_rg_graph.png) by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at 3.3–3.4 claims PMPM, while Hispanic peaks higher at 3.8 (vs. AB 3.4). In 2010, all groups decline by a similar amount (YoY −34.8% to −35.9%).
+- [Total Count PMPM](./assets/total_count_pmpm_rg_graph.png) by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at 3.3–3.4 claims PMPM, while Hispanic peaks higher at 3.8 (vs. AB 3.4). In 2010, all groups decline by a similar amount (YoY −34.8% to −35.9%).
   
 [![Insights Deep Dive](./assets/data_reads4.png)](./assets/data_reads4.png)
 
