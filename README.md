@@ -44,7 +44,7 @@ Across the 3 KPIs, Medicare’s performance for beneficiaries declined significa
 
 - The svc RX was the only svc with declines in MLR every year (-23.3% YoY 08->09 and -43.2% YoY 09->10). RX’s MLR fell from 552.2% (2008) to 240.7% in (2010). 
 
-- The decline in RX's MLR is partly attributable to more beneficiaries with 12 months of Pt. D coverage: full-year enrollment rose from 53.2% (2008) to 74.7% (2010) according to the [Pt. D Member Months Coverage-Length Distribution graph](./assets/part_b_distribution_graph).
+- The decline in RX's MLR is partly attributable to more beneficiaries with 12 months of Pt. D coverage: full-year enrollment rose from 53.2% (2008) to 74.7% (2010) according to the [Pt. D Member Months Coverage-Length Distribution graph](./assets/part_d_distribution_graph).
   
 - Just like the svc Total, OP’s and PROF’s MLR values peaked in 2009 at 95.9% and 173.6%, then fell in 2010 to 47.2% and 97.2%. In 2010, MLR declined across all service lines (YoY): Total −45.5%, OP −50.8%, PROF −44.0%, RX −43.2%.
   
@@ -85,7 +85,7 @@ Across the 3 KPIs, Medicare’s performance for beneficiaries declined significa
 
 - Count PMPM uses the same denominator as Cost PMPM—member-months—but a different numerator (claim counts, not dollars). Even so, it mirrors the MLR/Cost PMPM pattern: PROF, OP, and Total peak in 2009 at 1.5, 0.3, and 3.4 claims PMPM, then drop sharply in 2010, while RX peaks earlier at 2.5 in 2008 and declines thereafter. In 2010, Count PMPM falls YoY across all service lines: Total −35.8%, OP −44.0%, PROF −36.1%, RX −39.7%.
 
-- Claim Count is the annual total number of claims and serves as the numerator of Count PMPM. Based on the [Claim_Count Distribution Graph](./assets/claim_count_distribution_graph) Across OP, PROF, and RX, its service-line share was stable, with a mean absolute YoY %Δ  of 3.5%.
+- Claim Count is the annual total number of claims and serves as the numerator of Count PMPM. Based on the [Claim Count Distribution Graph](./assets/claim_count_distribution_graph) Across OP, PROF, and RX, its service-line share was stable, with a mean absolute YoY %Δ  of 3.5%.
 
 - PROF Count PMPM (Count where svc = PROF) peaked at 1.5 claims PMPM in 2009—up +5% YoY from 2008—then fell -36.1% YoY in 2010 to 0.9.
 
