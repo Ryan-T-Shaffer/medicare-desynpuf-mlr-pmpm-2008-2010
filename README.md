@@ -1,5 +1,5 @@
 # Project Background
-The Pennsylvania Department of Aging, specifically the Secretary’s Office and the Office of Policy & Planning, engaged a third-party healthcare analytics consultant to develop a dashboard and report. The project assesses the performance, accessibility, and equity of Medicare Parts B and D and Total (all service lines) at the national level, with the intent to later compare these findings to Pennsylvania’s state-level performance. The analysis uses the CMS DE-SynPUF Medicare 2008–2010 dataset to measure year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines (svc) and 5 race groups. Given the parallel KPI declines observed by 2010, the analysis assesses whether the drop reflects access frictions (cost sharing, authorization, networks) or beneficial changes (prevention, price reductions). The findings are intended to inform decisions on outreach funding, transportation programs, and benefits counseling.
+The Pennsylvania Department of Aging, specifically the Secretary’s Office and the Office of Policy & Planning, engaged a third-party healthcare analytics consultant to develop a dashboard and report. The project assesses the performance, accessibility, and equity of Medicare Parts B and D and Total (all service lines) at the national level, with the intent to later compare these findings to Pennsylvania’s state-level performance. The analysis uses the [CMS DE-SynPUF Medicare 2008–2010 dataset](https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files/cms-2008-2010-data-entrepreneurs-synthetic-public-use-file-de-synpuf) to measure year-over-year (YoY) trends in Cost PMPM, Count PMPM, and Medical Loss Ratio (MLR) across Medicare service lines (svc) and 5 race groups. Given the parallel KPI declines observed by 2010, the analysis assesses whether the drop reflects access frictions (cost sharing, authorization, networks) or beneficial changes (prevention, price reductions). The findings are intended to inform decisions on outreach funding, transportation programs, and benefits counseling.
 
 *How insights are evaluated in the report on the following key areas*:
 - **MLR Trends by SVC:** The amount Medicare spends yearly on healthcare compared to the amount Medicare charges beneficiaries in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and the combined Total. 
@@ -44,11 +44,11 @@ Across the 3 KPIs, Medicare’s performance for beneficiaries declined significa
 
 - The svc RX was the only svc with declines in MLR every year (-23.3% YoY 08->09 and -43.2% YoY 09->10). RX’s MLR fell from 552.2% (2008) to 240.7% in (2010). 
 
-- The decline in RX's MLR is partly attributable to more beneficiaries with 12 months of Pt. D coverage: full-year enrollment rose from 53.2% (2008) to 74.7% (2010) in this sample.
+- The decline in RX's MLR is partly attributable to more beneficiaries with 12 months of Pt. D coverage: full-year enrollment rose from 53.2% (2008) to 74.7% (2010) according to the [Pt. D Member Months Coverage-Length Distribution graph](./assets/part_b_distribution_graph).
   
 - Just like the svc Total, OP’s and PROF’s MLR values peaked in 2009 at 95.9% and 173.6%, then fell in 2010 to 47.2% and 97.2%. In 2010, MLR declined across all service lines (YoY): Total −45.5%, OP −50.8%, PROF −44.0%, RX −43.2%.
   
-- Allowed Cost is Medicare’s total annual spending on beneficiaries’ care and the numerator of MLR. Across OP, PROF, and RX, the relative distribution of Allowed Cost was stable, with a mean absolute YoY %Δ of 4.2%.
+- Allowed Cost is Medicare’s total annual spending on beneficiaries’ care and the numerator of MLR. Based on the [Allowed Cost Distribution Graph](./assets/allowed_cost_distribution_graph) for OP, PROF, and RX, the relative distribution of Allowed Cost was stable, with a mean absolute YoY %Δ of 4.2%.
 
 
 ***Disclaimer:*** High Medical Loss Ratio (MLR) values in the 200–300% range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. MLRs below 85% aren’t errors—Part B premiums can fully cover some service lines (e.g. OP), but this service-line view excludes the combined OP + PROF cost.
@@ -73,9 +73,9 @@ Across the 3 KPIs, Medicare’s performance for beneficiaries declined significa
 
 - Cost PMPM uses Allowed Cost as its numerator—the same claims-dollar numerator as MLR—divided by member-months. Because the numerator trends are shared, Cost PMPM largely mirrors the MLR pattern: PROF, OP, and Total peak in 2009 at 167.4, 92.4, and 359.8 PMPM, then drop sharply in 2010, while RX peaks earlier at 154.2 in 2008 and declines thereafter. In 2010, Cost PMPM fell YoY across all service lines: Total −37.8%, OP −43.6%, PROF −35.8%, RX −40.2%.
 
-- Despite the sharp decline in Total Cost PMPM by 2010, the denominator (member-months) was not the driver. Full-year enrollment was stable to rising: 87.3% of beneficiaries had 12 months of Part B or Part D coverage in 2008, increasing to 92.1% in 2010.
+- Despite the sharp decline in Total Cost PMPM by 2010, the denominator (member-months) was not the driver. As seen in the [Greatest Member Months Coverage-Length Distribution Graph](./assets/greatest_months_distribution_graph), full-year enrollment remained stable or increased: 87.3% of beneficiaries had 12 months of Part B or Part D coverage in 2008, increasing to 92.1% in 2010.
   
-- Segmenting by race shows the same pattern. Total Cost PMPM for AB, Black, Caucasian, and Hispanic is tightly clustered, peaking in 2009 at 358.9–371.5 PMPM. The Other group peaks lower at 326.1 (vs. AB 359.8) in 2009. In 2010, all groups decline by a similar amount (YoY −36.5% to −38%).
+- Segmenting by race shows the same pattern. [Total Cost PMPM](./assets/total_cost_pmpm_rg_graph) for AB, Black, Caucasian, and Hispanic is tightly clustered, peaking in 2009 at 358.9–371.5 PMPM. The Other group peaks lower at 326.1 (vs. AB 359.8) in 2009. In 2010, all groups decline by a similar amount (YoY −36.5% to −38%).
 
 
 [![Insights Deep Dive](./assets/data_reads3.png)](./assets/data_reads3.png)
@@ -85,13 +85,13 @@ Across the 3 KPIs, Medicare’s performance for beneficiaries declined significa
 
 - Count PMPM uses the same denominator as Cost PMPM—member-months—but a different numerator (claim counts, not dollars). Even so, it mirrors the MLR/Cost PMPM pattern: PROF, OP, and Total peak in 2009 at 1.5, 0.3, and 3.4 claims PMPM, then drop sharply in 2010, while RX peaks earlier at 2.5 in 2008 and declines thereafter. In 2010, Count PMPM falls YoY across all service lines: Total −35.8%, OP −44.0%, PROF −36.1%, RX −39.7%.
 
-- Claim Count is the annual total number of claims and serves as the numerator of Count PMPM. Across OP, PROF, and RX, its service-line share was stable, with a mean absolute YoY %Δ  of 3.5%.
+- Claim Count is the annual total number of claims and serves as the numerator of Count PMPM. Based on the [Claim_Count Distribution Graph](./assets/claim_count_distribution_graph) Across OP, PROF, and RX, its service-line share was stable, with a mean absolute YoY %Δ  of 3.5%.
 
-- PROF Count PMPM (Count where svc = PROFl) peaked at 1.5 claims PMPM in 2009—up +5% YoY from 2008—then fell -36.1% YoY in 2010 to 0.9.
+- PROF Count PMPM (Count where svc = PROF) peaked at 1.5 claims PMPM in 2009—up +5% YoY from 2008—then fell -36.1% YoY in 2010 to 0.9.
 
-- The decline in PROF Count PMPM is not explained by coverage duration: full-year Part B enrollment rose from 84.0% (2008) to 89.1% (2010) in this sample. This points to lower utilization per member, not a shrinking denominator.
+- The decline in PROF Count PMPM is not explained by coverage duration: full-year Part B enrollment rose from 84.0% (2008) to 89.1% (2010) according to the [Pt. B Member Months Coverage-Length Distribution graph](./assets/part_b_distribution_graph). This points to lower utilization per member, not a shrinking denominator.
 
-- Total Count PMPM by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at 3.3–3.4 claims PMPM, while Hispanic peaks higher at 3.8 (vs. AB 3.4). In 2010, all groups decline by a similar amount (YoY −34.8% to −35.9%).
+- [Total Count PMPM](./assets/total_cost_pmpm_rg_graph) by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at 3.3–3.4 claims PMPM, while Hispanic peaks higher at 3.8 (vs. AB 3.4). In 2010, all groups decline by a similar amount (YoY −34.8% to −35.9%).
   
 [![Insights Deep Dive](./assets/data_reads4.png)](./assets/data_reads4.png)
 
