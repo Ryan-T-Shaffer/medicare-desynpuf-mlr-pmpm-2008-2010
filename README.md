@@ -130,8 +130,10 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
-  
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+**Assumption:** Sample attrition and disclosure controls in 2010 materially affected KPI results.
+
+* **Increased opt-outs:** A meaningful share of beneficiaries likely opted out in 2010 due to heightened privacy concerns among those with rare or high-cost conditions being identified through the dataset, reducing representation of heavier utilizers.
+* **Disclosure recoding/suppression:** To protect confidentiality, some rare or high-cost procedures were removed or recoded to more common, lower-cost categories, shifting the all 3 final KPIs. 
+* **Comorbidity distortion:** The recorded number of chronic-condition comorbidities was artificially increased across the board. As a result, the dataset overstates how many conditions each beneficiary actually had, and additional claims were deleted or recoded to lower costs and reduce identifiability.
+
+
