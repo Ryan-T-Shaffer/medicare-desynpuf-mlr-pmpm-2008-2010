@@ -73,7 +73,9 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 
 - Despite the sharp decline in Total Cost PMPM by 2010, the denominator (member-months) was not the driver. As seen in the [Greatest Member Months Coverage-Length Distribution Graph](./assets/greatest_months_distribution_graph.png), full-year enrollment remained stable or increased: 87.3% of beneficiaries had 12 months of Part B or Part D coverage in 2008, increasing to 92.1% in 2010.
   
-- Segmenting by race shows the same pattern. [Total Cost PMPM](./assets/total_cost_pmpm_rg_graph.png) for AB, Black, Caucasian, and Hispanic is tightly clustered, peaking in 2009 at 358.9–371.5 PMPM. The Other group peaks lower at 326.1 (vs. AB 359.8) in 2009. In 2010, all groups decline by a similar amount (YoY −36.5% to −38%).
+- Segmenting by race highlighting the lower equity pattern. [Total Cost PMPM](./assets/total_cost_pmpm_rg_graph.png) for AB, Black, Caucasian, and Hispanic is tightly clustered, peaking in 2009 at 358.9–371.5 PMPM. The Other group peaks lower at 326.1 (vs. AB 359.8) in 2009. In 2010, all groups decline by a similar amount (YoY −36.5% to −38%).
+
+- Segmenting by race highlighting the higher equity pattern. [RX Cost PMPM](./assets/rx_cost_pmpm_graph.png) for AB, Black, Caucasian, and Other is tightly clustered, peaking in 2009 at $126.2 -$136.9 PMPM. The Hispanic group peaks lower at $159.7 PMPM (vs. AB’s 128.6) in 2009. In 2010, all groups decline by a similar amount (YoY −37.8% to −40.4%).
 
 
 [![Insights Deep Dive](./assets/data_reads3.png)](./assets/data_reads3.png)
