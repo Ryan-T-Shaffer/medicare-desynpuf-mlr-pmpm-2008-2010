@@ -101,12 +101,12 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
   
 ### 1) National Medicare Performance & Affordability
 
-* **Decompose drivers of Cost PMPM** into **utilization vs. unit price** by service line; expand site-of-care shifts and contracting strategies where price is the dominant lever, and restore high-value ambulatory use where utilization fell most.
-* **Stand up a scenario playbook** (best/base/worst trend) to stress-test affordability and inform benefits counseling, funding asks, and coordination with federal and plan partners.
+* **Break down Cost PMPM into its two parts**: utilization (claims per member) and unit price (average cost per claim) for each svc; where prices are the main driver, expand site of care shifts and strengthen contracting, and where utilization falls, restore high value ambulatory visits. This recommendation is supported by the sharp declines from 2009 to 2010 in Cost PMPM, Count PMPM, and MLR (−37.8%, −35.8%, −45.5%), ending at MLR 164.2%, $223.8 PMPM, and 2.2 claims PMPM. Treating Cost PMPM as Count multiplied by Unit Price pinpoints the controllable factor to act on, either the prices paid or the amount of care used, so actions match the true cause.
+* **Build a scenario playbook**: create simple forward-looking projections for each KPI with three cases (best, base, worst), spell out the assumptions behind each case (utilization and unit price), define trigger thresholds, and pre-agree the actions to take if a trigger is hit. This is warranted because KPIs rose modestly from 2008 to 2009, then fell sharply from 2009 to 2010, indicating real volatility that leaders should plan for. Use **scenario bands** as easy-to-read ranges around each KPI (for example, green, yellow, red); when actual results move into a band, execute the matching actions such as tightening contracting, expanding outreach, or adjusting budgets.
 
 ### 2) National Accessibility
 
-* **Pilot transportation and telehealth access fixes** in segments showing the steepest utilization pullback, with clear targets for preventive and ambulatory visit recovery.
+* **Pilot transportation and telehealth access fixes** in segments with the steepest utilization pullback, setting clear targets for recovering preventive and ambulatory visits. This is warranted because **Count PMPM** fell across every service line in 2010 (**Total −35.8%**, **OP −44.0%**, **PROF −36.1%**, **RX −39.7%**) while **full-year Part B enrollment** rose about **5%** from 2008 to 2010, indicating reduced use rather than fewer covered months. Improving mobility and virtual access directly addresses likely access barriers and should help restore appropriate utilization.
 * **Audit nonclinical frictions** (prior authorization, referral loops, appointment availability) and streamline pathways for high-value services through navigator support and simplified workflows.
 
 ### 3) National Equity
@@ -114,12 +114,7 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 * **Target outreach where gaps persist**, pairing language-concordant communications with medication-therapy-management and preventive touchpoints tailored to community needs.
 * **Publish an equity scorecard** tracking gaps in use and spend by group and service line; fund interventions where gaps fail to narrow across review cycles.
 
-### 4) Data Replication & Validation for Pennsylvania (State Readiness)
-
-* **Replicate the KPI suite with Pennsylvania-specific CMS files** and align definitions (plan-level MLR vs. FFS spend/use) to ensure decisions rest on state-level evidence.
-* **Run timing/denominator sensitivity checks** (claims run-out, coding, coverage months) and publish a brief methods note so stakeholders interpret 2010-style inflections correctly.
-
-### 5) Implementation & Monitoring
+### 4) Implementation & Monitoring
 
 * **Launch a 12-month pilot roadmap** (transportation/telehealth, MTM, targeted preventive outreach) with named owners, budgets, and evaluation plans tied to KPI movement and avoidable acute use.
 * **Create a monthly performance dashboard** with early-warning thresholds and equity gap tracking; review quarterly with the Secretary’s Office and Policy & Planning to adjust funding and programs.
