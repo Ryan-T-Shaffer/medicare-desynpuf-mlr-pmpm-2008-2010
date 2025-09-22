@@ -130,10 +130,14 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-**Assumption:** Beneficiariery opt-outs and data manipulation in 2010 greatly affected KPI results.
+**Caveats:** Beneficiariery opt-outs and data manipulation in 2010 greatly affected KPI results.
 
 * **Increased opt-outs:** A meaningful share of beneficiaries likely opted out in 2010 due to heightened privacy concerns among those with rare or high-cost conditions being identified through the dataset, reducing representation of heavier utilizers.
 * **Disclosure recoding/suppression:** To protect confidentiality, some rare or high-cost procedures were removed or recoded to more common, lower-cost categories, shifting the all 3 final KPIs. 
 * **Comorbidity distortion:** The recorded number of chronic-condition comorbidities was artificially increased across the board. As a result, the dataset overstates how many conditions each beneficiary actually had, and additional claims were deleted or recoded to lower costs and reduce identifiability.
+
+**Assumptions:** The component measure Premium Revenue was estimated
+
+* **Premium Revenue Estimation Breakdown:** Premium revenue is the denominator (component measure) of MLR. For each beneficiary, it equals the months of Part B or Part D enrollment during the year multiplied by that year’s national average monthly premium for that part, then summed across beneficiaries. This simplification of premium revenue was necessary because the dataset lacks beneficiary-specific monthly premium amounts by Medicare part. By contrast, Allowed Cost, the MLR numerator, required no simplification and reflects the claims spend as reported.
 
 
