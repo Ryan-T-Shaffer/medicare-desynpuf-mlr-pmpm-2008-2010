@@ -107,7 +107,7 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 ### 2) National Accessibility
 
 * **Pilot transportation and telehealth access fixes** in segments with the steepest utilization pullback, setting clear targets for recovering preventive and ambulatory visits. This is warranted because **Count PMPM** fell across every service line in 2010 (**Total −35.8%**, **OP −44.0%**, **PROF −36.1%**, **RX −39.7%**) while **full-year Part B enrollment** rose about **5%** from 2008 to 2010, indicating reduced use rather than fewer covered months. Improving mobility and virtual access directly addresses likely access barriers and should help restore appropriate utilization.
-* **Audit nonclinical frictions** (prior authorization, referral loops, appointment availability) and streamline pathways for high-value services through navigator support and simplified workflows.
+* **Audit nonclinical frictions**: review prior authorization, referral loops, and appointment availability, and streamline pathways with navigator support and simpler workflows. This is justified because full year enrollment increased from 2008 to 2010 (Part B from **84.0%** to **89.1%**, Part D from **53.2%** to **74.7%**, and **Greatest Months** from **87.3%** to **92.1%**), indicating that coverage duration expanded rather than shrank. When coverage rises while use falls, administrative barriers are a likely contributor; simplifying approvals and navigation should help restore necessary care without increasing low value utilization.
 
 ### 3) National Equity
 
