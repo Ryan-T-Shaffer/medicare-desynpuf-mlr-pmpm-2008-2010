@@ -97,19 +97,33 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 
 # Recommendations:
 
-Based on the insights and findings above, we recommend the Secretary’s Office and the Office of Policy & Planning consider the following:
+Based on the insights and findings above, we recommend the Pennsylvania Department of Aging, specifically the Secretary’s Office and the Office of Policy & Planning, consider the following:
   
-### KPI trends by SVC
+### 1) National Medicare Performance & Affordability
 
-Recommendation Further analyze the RX group to see why it is the only one that peaked in 2008
-  
-### Further Segmenting and digging deeper is not showing anything unexpected, recommended to take a step back before continuing?
-  
-### Can we conclude specifc positive or negative impacts that explain the results of the data?
+* **Decompose drivers of Cost PMPM** into **utilization vs. unit price** by service line; expand site-of-care shifts and contracting strategies where price is the dominant lever, and restore high-value ambulatory use where utilization fell most.
+* **Stand up a scenario playbook** (best/base/worst trend) to stress-test affordability and inform benefits counseling, funding asks, and coordination with federal and plan partners.
 
-### Medicare's overall performance (talk about what should be done in terms of big steps in order to combat this steep decline)?
-  
-### What is the next step that should be taken? 
+### 2) National Accessibility
+
+* **Pilot transportation and telehealth access fixes** in segments showing the steepest utilization pullback, with clear targets for preventive and ambulatory visit recovery.
+* **Audit nonclinical frictions** (prior authorization, referral loops, appointment availability) and streamline pathways for high-value services through navigator support and simplified workflows.
+
+### 3) National Equity
+
+* **Target outreach where gaps persist**, pairing language-concordant communications with medication-therapy-management and preventive touchpoints tailored to community needs.
+* **Publish an equity scorecard** tracking gaps in use and spend by group and service line; fund interventions where gaps fail to narrow across review cycles.
+
+### 4) Data Replication & Validation for Pennsylvania (State Readiness)
+
+* **Replicate the KPI suite with Pennsylvania-specific CMS files** and align definitions (plan-level MLR vs. FFS spend/use) to ensure decisions rest on state-level evidence.
+* **Run timing/denominator sensitivity checks** (claims run-out, coding, coverage months) and publish a brief methods note so stakeholders interpret 2010-style inflections correctly.
+
+### 5) Implementation & Monitoring
+
+* **Launch a 12-month pilot roadmap** (transportation/telehealth, MTM, targeted preventive outreach) with named owners, budgets, and evaluation plans tied to KPI movement and avoidable acute use.
+* **Create a monthly performance dashboard** with early-warning thresholds and equity gap tracking; review quarterly with the Secretary’s Office and Policy & Planning to adjust funding and programs.
+
 
 
 # Assumptions and Caveats:
