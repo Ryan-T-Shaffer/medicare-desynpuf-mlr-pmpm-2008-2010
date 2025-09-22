@@ -130,7 +130,7 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-**Assumption:** Sample attrition and disclosure controls in 2010 materially affected KPI results.
+**Assumption:** Beneficiariery opt-outs and data manipulation in 2010 greatly affected KPI results.
 
 * **Increased opt-outs:** A meaningful share of beneficiaries likely opted out in 2010 due to heightened privacy concerns among those with rare or high-cost conditions being identified through the dataset, reducing representation of heavier utilizers.
 * **Disclosure recoding/suppression:** To protect confidentiality, some rare or high-cost procedures were removed or recoded to more common, lower-cost categories, shifting the all 3 final KPIs. 
