@@ -113,7 +113,7 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 
 ### 3) National Equity
 
-* **Target outreach where gaps persist**, pairing language-concordant communications with medication-therapy-management and preventive touchpoints tailored to community needs.
+* **Target outreach where gaps persist**: use communications in beneficiaries’ **preferred language** (translated materials) alongside medication therapy management and preventive touchpoints tailored to each community. This is supported by equity patterns in **Cost PMPM** and **Count PMPM** by race and svc: the **Other** group has lower equity across **Total, OP, and PROF**, while **Hispanic** has higher equity in **RX** and **Total** (for example, in 2009 Total Cost PMPM for all race groups besides Other clustered around **\$358.9 to \$371.5 PMPM** vs. **Other at \$326.1PMPM**, and RX Cost PMPM for all race groups besides Hispanic clustered around **\$126.2 to \$136.9** vs. **Hispanic at \$159.7**). Tailored outreach and MTM should narrow these level differences while preserving overall trend improvements.
 * **Publish an equity scorecard** tracking gaps in use and spend by group and service line; fund interventions where gaps fail to narrow across review cycles.
 
 ### 4) Implementation & Monitoring
