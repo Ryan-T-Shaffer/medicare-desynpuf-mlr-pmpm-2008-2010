@@ -1,3 +1,20 @@
+# Medicare DESynPUF Analysis (MLR, Cost PMPM, Count PMPM), 2008–2010
+
+## Table of Contents
+- [Project Background](#project-background)
+- [Data Structure & Initial Checks](#data-structure--initial-checks)
+- [Executive Summary](#executive-summary)
+- [Insights Deep Dive](#insights-deep-dive)
+  - [MLR by SVC](#mlr-by-svc)
+  - [MLR by Race Group and SVC](#mlr-by-race-group-and-svc)
+  - [Cost PMPM by Race Group and SVC](#cost-pmpm-by-race-group-and-svc)
+  - [Count PMPM by Race Group and SVC](#count-pmpm-by-race-group-and-svc)
+- [Recommendations](#recommendations)
+  - [1) National Medicare Performance & Affordability](#1-national-medicare-performance--affordability)
+  - [2) National Accessibility](#2-national-accessibility)
+  - [3) National Equity](#3-national-equity)
+- [Assumptions and Caveats](#assumptions-and-caveats)
+
 # Project Background
 
 The Pennsylvania Department of Aging, specifically the Secretary’s Office and the Office of Policy & Planning, engaged a third-party healthcare analytics consultant to develop a dashboard and report. The project assesses the performance, accessibility, and equity of Medicare Parts B and D and Total (all service lines) at the national level, with the intent to later compare these findings to Pennsylvania’s state-level performance. The analysis uses the [CMS DE-SynPUF Medicare 2008–2010 dataset](https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files/cms-2008-2010-data-entrepreneurs-synthetic-public-use-file-de-synpuf) to measure year-over-year (YoY) trends in **Cost PMPM**, **Count PMPM**, and **Medical Loss Ratio (**MLR**)** across Medicare service lines (svc) and 5 race groups. Given the parallel KPI declines by 2010, the analysis considers whether these trends reflect access barriers (cost sharing, prior authorization, network limits) or beneficial shifts (prevention, price reductions). The findings aim to guide decisions on outreach funding, transportation support, and benefits counseling.
