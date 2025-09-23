@@ -49,6 +49,7 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 - Allowed Cost is Medicare’s total annual spending on beneficiaries’ care and the numerator of **MLR**. Based on the [Allowed Cost Distribution Graph](./assets/allowed_cost_distribution_graph.png) for OP, PROF, and RX, the relative distribution of Allowed Cost was stable, with a mean absolute YoY %Δ of **4.2%**.
 
 ***Disclaimer:*** High **Medical Loss Ratio (**MLR**)** values in the **200–300%** range in this report are not errors; they reflect that, unlike private insurers, Medicare is not funded solely by premiums. MLRs below **85%** aren’t errors, Part B premiums can fully cover some service lines (e.g. OP), but this service-line view excludes the combined OP + PROF cost.
+
 [![Insights Deep Dive](./assets/data_reads1.png)](./assets/data_reads1.png)
 
 ### **MLR** by Race Group and SVC:
@@ -60,6 +61,7 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 - PROF **MLR** by race group: The five groups are fairly evenly spaced, with inter-group ranges of **~15–32** points year over year. **MLR** peaked in 2009 at **144.5–176.9%** (Other **144.5%** vs. AB **173.6%**). In 2010 all groups declined similarly (YoY **-42.9%** to **-44.6%**).
 
 - RX **MLR** by race group: The Hispanic group’s **MLR** is consistently higher than the other four, with the widest gap in 2009 (**526%** vs. Black **451%**, **+75 pts**). RX MLRs peak in 2008 (**545.6–600.2%**). Again, in 2010 all groups declined similarly (YoY **-40.8%** to **-43.4%**).
+
 [![Insights Deep Dive](./assets/data_reads2.png)](./assets/data_reads2.png)
 
 ### **Cost PMPM** by Race Group and SVC:
@@ -71,6 +73,7 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 - Segmenting by race highlighting the lower equity pattern. [Total **Cost PMPM**](./assets/total_cost_pmpm_rg_graph.png) for AB, Black, Caucasian, and Hispanic is tightly clustered, peaking in 2009 at **$358.9–371.5 PMPM**. The Other group peaks lower at **326.1** PMPM (vs. AB **$359.8**) in 2009. In 2010, all groups decline by a similar amount (YoY **-36.5%** to **-38%**).
 
 - Segmenting by race highlighting the higher equity pattern. [RX **Cost PMPM**](./assets/rx_cost_pmpm_graph.png) for AB, Black, Caucasian, and Other is tightly clustered, peaking in 2009 at **$126.2-136.9 PMPM**. The Hispanic group peaks lower at **$159.7** PMPM (vs. AB’s **$128.6**) in 2009. In 2010, all groups decline by a similar amount (YoY **-37.8%** to **-40.4%**).
+
 [![Insights Deep Dive](./assets/data_reads3.png)](./assets/data_reads3.png)
 
 
@@ -85,6 +88,7 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 - The decline in PROF **Count PMPM** is not explained by coverage duration: full-year Part B enrollment rose from **84.0%** (2008) to **89.1%** (2010) according to the [Pt. B Member Months Coverage-Length Distribution graph](./assets/part_b_distribution_graph.png). This points to lower utilization per member, not a shrinking denominator.
 
 - [Total **Count PMPM**](./assets/total_claim_pmpm_rg_graph.png) by race group mirrors the other KPIs: AB, Black, Caucasian, and Other are tightly clustered, peaking in 2009 at **3.3–3.4 claims PMPM**, while Hispanic peaks higher at **3.8** (vs. AB **3.4**). In 2010, all groups decline by a similar amount (YoY **-34.8%** to **-35.9%**).
+
 [![Insights Deep Dive](./assets/data_reads4.png)](./assets/data_reads4.png)
 
 
@@ -113,15 +117,11 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
 **Caveats:** Beneficiary opt-outs and data manipulation in 2010 greatly affected KPI results.
-
 * **Increased opt-outs:** A meaningful share of beneficiaries likely opted out in 2010 due to heightened privacy concerns among those with rare or high-cost conditions being identified through the dataset, reducing representation of heavier utilizers.
-
 * **Disclosure recoding/suppression:** To protect confidentiality, some rare or high-cost procedures were removed or recoded to more common, lower-cost categories, shifting the all 3 final KPIs. 
-
 * **Comorbidity distortion:** The recorded number of chronic-condition comorbidities was artificially increased across the board. As a result, the dataset overstates how many conditions each beneficiary actually had, and additional claims were deleted or recoded to lower costs and reduce identifiability.
 
 **Assumptions:** The component measure Premium Revenue was estimated
-
 * **Premium Revenue Estimation Breakdown:** Premium revenue is the denominator (component measure) of **MLR**. For each beneficiary, it equals the months of Part B or Part D enrollment during the year multiplied by that year’s national average monthly premium for that part, then summed across beneficiaries. This simplification of premium revenue was necessary because the dataset lacks beneficiary-specific monthly premium amounts by Medicare part. By contrast, Allowed Cost, the **MLR** numerator, required no simplification and reflects the claims spend as reported.
 
 
