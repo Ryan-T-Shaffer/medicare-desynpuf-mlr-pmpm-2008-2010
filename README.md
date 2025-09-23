@@ -25,6 +25,7 @@ The database structure as seen below for the CMS DE-SynPUF Medicare dataset cons
 
 ERD for CMS 2008-2010 DE-SynPUF
 [<img src="./assets/desynpuf_medicare_db.png" alt="Entity Relationship Diagram" width="800">](./assets/erd.png)
+
 ***Disclaimer:*** The outpatient_claims and carrier_claims tables had columns removed from the ERD diagram in order to fit in a singular screenshot because each table had 80+ columns. All removed columns were non-essential to the ERD.
 
 
