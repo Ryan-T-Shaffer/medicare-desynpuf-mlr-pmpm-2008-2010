@@ -38,7 +38,7 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 # Insights Deep Dive
 ### **MLR** by SVC:
 
-- Total **MLR** (**MLR** where svc = Total) peaked at **301.0%** in 2009—up +**2.1%** YoY from 2008—then fell **-45.5%** YoY in 2010 to **164.2%**.
+- Total **MLR** (**MLR** where svc = Total) peaked at **301.0%** in 2009—up **+2.1%** YoY from 2008—then fell **-45.5%** YoY in 2010 to **164.2%**.
 
 - The svc RX was the only svc with declines in **MLR** every year (**-23.3%** YoY 08->09 and **-43.2%** YoY 09->10). RX’s **MLR** fell from **552.2%** (2008) to **240.7%** in (2010). 
 
