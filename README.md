@@ -119,7 +119,7 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 
 # Assumptions and Caveats:
 
-Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
+This analysis includes several data-related assumptions and caveats listed below:
 
 **Caveats:** Beneficiariery opt-outs and data manipulation in 2010 greatly affected KPI results.
 
