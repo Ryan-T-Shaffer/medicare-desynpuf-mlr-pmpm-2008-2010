@@ -10,9 +10,6 @@
   - [Cost PMPM by Race Group and SVC](#cost-pmpm-by-race-group-and-svc)
   - [Count PMPM by Race Group and SVC](#count-pmpm-by-race-group-and-svc)
 - [Recommendations](#recommendations)
-  - [1) National Medicare Performance & Affordability](#1-national-medicare-performance--affordability)
-  - [2) National Accessibility](#2-national-accessibility)
-  - [3) National Equity](#3-national-equity)
 - [Assumptions and Caveats](#assumptions-and-caveats)
 
 # Project Background
