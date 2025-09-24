@@ -81,7 +81,7 @@ Across the three KPIs, Medicare’s performance for beneficiaries declined sharp
 
 - RX **MLR** by race group: The Hispanic group’s **MLR** is consistently higher than the other four, with the widest gap in 2009 (**526%** vs. Black **451%**, **+75 pts**). RX MLRs peak in 2008 (**545.6–600.2%**). Again, in 2010 all groups declined similarly (YoY **-40.8%** to **-43.4%**).
 
-**Tip:** To see the referenced values, hover over the graphs while in the dashboard. The tooltip on these graphs shows both the actual values and the YoY %Δ, while other graphs show only the actual values.
+**Tip:** To see these referenced values, hover over the graphs while in the dashboard. The tooltip on these graphs shows both the actual values and the YoY %Δ, while other graphs show only the actual values.
 [![Insights Deep Dive](./assets/data_reads2.png)](./assets/data_reads2.png)
 
 ### **Cost PMPM** by Race Group and SVC:
