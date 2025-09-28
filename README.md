@@ -11,6 +11,7 @@
   - [Count PMPM by Race Group and SVC](#count-pmpm-by-race-group-and-svc)
 - [Recommendations](#recommendations)
 - [Assumptions and Caveats](#assumptions-and-caveats)
+- [Copyright](#Copyright)
 
 # Project Background
 
@@ -138,6 +139,8 @@ Throughout the analysis, multiple assumptions were made to manage challenges wit
 **Assumptions:** The component measure Premium Revenue was estimated
 * **Premium Revenue Estimation Breakdown:** Premium revenue is the denominator (component measure) of **MLR**. For each beneficiary, it equals the months of Part B or Part D enrollment during the year multiplied by that year’s national average monthly premium for that part, then summed across beneficiaries. This simplification of premium revenue was necessary because the dataset lacks beneficiary-specific monthly premium amounts by Medicare part. By contrast, Allowed Cost, the **MLR** numerator, required no simplification and reflects the claims spend as reported.
 
+# Copyright
+All content in this repository is copyright (c) 2025 Ryan Shaffer. All rights reserved.
 
 
 
