@@ -1,3 +1,22 @@
+/* 
+File: sql/kpi_query.sql
+Purpose: Compute KPI rollups (Cost PMPM, Count PMPM, MLR) by year (2008-2010), svc (Total/RX/PROF/OP), 
+and race_group (AB, Black, Caucasian, Hispanic, Other).
+
+Tested: MySQL 8.0+
+How to run:  SOURCE sql/kpi_query.sql;
+
+Inputs (tables):
+  - beneficiaries            (DESYNPUF_ID, year, race_group or BENE_RACE_CD, member_months fields)
+  - claims_prof / claims_op / claims_rx (allowed_cost, dates, DESYNPUF_ID)
+  - premium reference tables (optional: monthly rates by year)
+
+Output:
+  - kpi_year_final (year, svc, svc_group, race_group, cost_pmpm, cnt_pmpm, mlr_pct)
+
+Last updated: 2025-09-28
+*/
+
 CREATE TABLE kpi_year_final
 ENGINE = InnoDB
 AS
