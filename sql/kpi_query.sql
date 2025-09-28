@@ -1,4 +1,9 @@
 /*
+Copyright (c) 2025 Ryan Shaffer. All rights reserved.
+Viewing only. No permission to copy, modify, distribute, or use without written consent.
+Contact: 20rs2002@gmail.com
+*/
+/*
 File: sql/kpi_query.sql
 Purpose: Compute KPI rollups (Cost PMPM, Count PMPM, MLR) by year (2008-2010), service line (Total, OP, PROF, RX),
          and race_group (AB plus named race groups). Returns a single table suitable for dashboards.
