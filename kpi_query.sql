@@ -139,7 +139,7 @@ denoms AS (
     'AB' AS race_group,
     SUM(mm_pt_b)                            AS mm_b,
     SUM(mm_pt_d)                            AS mm_d,
-    SUM(GREATEST(mm_pt_b, mm_pt_d))         AS mm_all, /*Used to determine Member Months denominator when combining all parts of Medicare for the Total svc. You won't add here just the greatest number of months subscribed between parts B & D for that year. */
+    SUM(GREATEST(mm_pt_b, mm_pt_d))         AS mm_all, /*Used to determine Member Months denominator when combining all parts of Medicare for the Total svc. You wonuldn't add the 2 values together here, just use the greatest number of months a beneficairy subscribed to between parts B & D for that year. */
     SUM(prem_b)                             AS prem_b,
     SUM(prem_d)                             AS prem_d,
     SUM(prem_b + prem_d)                    AS prem_all
