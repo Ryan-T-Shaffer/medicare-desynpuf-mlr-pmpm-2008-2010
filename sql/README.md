@@ -22,7 +22,9 @@ This will create or overwrite `kpi_year_final`.
 - `svc` — `Total`, `OP`, `PROF`, or `RX`
 - `svc_group` — `Total` or `Service Line`
 - `race_group` — per‑race values plus `AB` (all beneficiaries)
-- `cost_pmpm`, `cnt_pmpm`, `mlr_pct`
+- `cost_pmpm`
+- `cnt_pmpm`
+- `mlr_pct`
 
 ## Correctness rules (important)
 - **Total is not OP + PROF + RX.** KPIs are computed as **Σ numerators / Σ denominators** with service‑specific denominators:
@@ -37,12 +39,12 @@ This will create or overwrite `kpi_year_final`.
   - Claims tables: `(DESYNPUF_ID, year)` (and any date/partition keys used in joins).
   - `beneficiary_summary`: `(DESYNPUF_ID, year)`, `BENE_RACE_CD`.
   - Premium tables: `(year)`.
-- With proper indexing/partitioning, aggregation should execute in **minutes to tens of minutes** on typical developer hardware; without them, runtimes may be substantially longer.
+- With proper indexing/partitioning, aggregation should execute in **4-6 hours** on a standard laptop with 16GB of RAM; without them, runtimes may be substantially longer like **Like 6 days**.
 - Use `EXPLAIN` / `EXPLAIN ANALYZE` to verify partition pruning and index use.
 
 ## Data/privacy
 - The SQL assumes de‑identified data and contains **no credentials or local file paths**.
 - If you publish loaders, keep secrets out of scripts and the repo history.
 
-## License
-This project is licensed under the MIT License — see [`LICENSE`](LICENSE) for details.
+## Copyright
+All content in this repository is copyright (c) 2025 Ryan Shaffer. All rights reserved.
