@@ -63,7 +63,7 @@ CREATE TABLE kpi_year_final
 ENGINE = InnoDB
 AS
 WITH
-/* 1) Per-table, per-member, per-year subtotals (same patterns as your originals) */
+/* 1) Per-table, per-member, per-year subtotals, total medical cost per year for each beneficairy by svc*/
 pde AS (
   SELECT DESYNPUF_ID, `year`,
          SUM(COALESCE(TOT_RX_CST_AMT,0)) AS cost_pde,
@@ -104,17 +104,18 @@ member_year AS (
   SELECT
     bs.DESYNPUF_ID,
     bs.`year`,
-    bs.BENE_RACE_CD,
-    COALESCE(bs.BENE_SMI_CVRAGE_TOT_MONS,0) AS mm_pt_b,
-    COALESCE(bs.PLAN_CVRG_MOS_NUM      ,0) AS mm_pt_d,
-    pb.monthly_rate * COALESCE(bs.BENE_SMI_CVRAGE_TOT_MONS,0) AS prem_b,
-    pd.monthly_rate * COALESCE(bs.PLAN_CVRG_MOS_NUM      ,0) AS prem_d,
+    bs.BENE_RACE_CD, /*Race Code identifier*/
+    COALESCE(bs.BENE_SMI_CVRAGE_TOT_MONS,0) AS mm_pt_b, /*number of months of Medicare part B a beneficairy purchased for a year*/
+    COALESCE(bs.PLAN_CVRG_MOS_NUM      ,0) AS mm_pt_d, /*number of months of Medicare part D a beneficairy purchased for a year*/
+    pb.monthly_rate * COALESCE(bs.BENE_SMI_CVRAGE_TOT_MONS,0) AS prem_b, /*amount of total part B premiums a beneficairy paid over a year monthly in terms of months subscribed x monthly rate*/
+    pd.monthly_rate * COALESCE(bs.PLAN_CVRG_MOS_NUM      ,0) AS prem_d, /*amount of total Part D premiums a beneficairy paid over a year monthly in terms of months subscribed x monthly rate*/
     COALESCE(pde.cost_pde     ,0) AS cost_pde,
     COALESCE(carrier.cost_carrier,0) AS cost_carrier,
     COALESCE(outp.cost_outp   ,0) AS cost_outp,
     COALESCE(pde.cnt_pde      ,0) AS cnt_pde,
     COALESCE(carrier.cnt_carrier ,0) AS cnt_carrier,
     COALESCE(outp.cnt_outp    ,0) AS cnt_outp,
+         
     /* totals for 'Total' svc */
     COALESCE(pde.cost_pde     ,0) +
     COALESCE(carrier.cost_carrier,0) +
@@ -138,7 +139,7 @@ denoms AS (
     'AB' AS race_group,
     SUM(mm_pt_b)                            AS mm_b,
     SUM(mm_pt_d)                            AS mm_d,
-    SUM(GREATEST(mm_pt_b, mm_pt_d))         AS mm_all,
+    SUM(GREATEST(mm_pt_b, mm_pt_d))         AS mm_all, /*Used to determine Member Months denominator when combining all parts of Medicare for the Total svc. You won't add here just the greatest number of months subscribed between parts B & D for that year. */
     SUM(prem_b)                             AS prem_b,
     SUM(prem_d)                             AS prem_d,
     SUM(prem_b + prem_d)                    AS prem_all
