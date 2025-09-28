@@ -1,18 +1,60 @@
-/* 
+/*
 File: sql/kpi_query.sql
-Purpose: Compute KPI rollups (Cost PMPM, Count PMPM, MLR) by year (2008-2010), svc (Total/RX/PROF/OP), 
-and race_group (AB, Black, Caucasian, Hispanic, Other).
+Purpose: Compute KPI rollups (Cost PMPM, Count PMPM, MLR) by year (2008-2010), service line (Total, OP, PROF, RX),
+         and race_group (AB plus named race groups). Returns a single table suitable for dashboards.
 
-Tested: MySQL 8.0+
-How to run:  SOURCE sql/kpi_query.sql;
+Tested: MySQL 8.0+ (CTEs required)
+How to run: SOURCE sql/kpi_query.sql;
 
-Inputs (tables):
-  - beneficiaries            (DESYNPUF_ID, year, race_group or BENE_RACE_CD, member_months fields)
-  - claims_prof / claims_op / claims_rx (allowed_cost, dates, DESYNPUF_ID)
-  - premium reference tables (optional: monthly rates by year)
+Dependencies & assumptions
+--------------------------
+Tables expected (with required columns):
+  - beneficiary_summary
+      DESYNPUF_ID (PK or unique per member/year)
+      year (INT)
+      BENE_RACE_CD (INT code)
+      BENE_SMI_CVRAGE_TOT_MONS (member months for Part B; INT)
+      PLAN_CVRG_MOS_NUM (member months for Part D; INT)
+  - prescript_drug_events
+      DESYNPUF_ID, year, TOT_RX_CST_AMT (numeric total cost), PDE_ID (row id)
+      Notes: RX claim date fields must allow YEAR(...) extraction used upstream.
+  - carrier_claims
+      DESYNPUF_ID, year, CLM_ID
+      LINE_ALOWD_CHRG_AMT_1 ... LINE_ALOWD_CHRG_AMT_13 (numeric allowed costs)
+  - outpatient_claims
+      DESYNPUF_ID, year, CLM_ID,
+      CLM_PMT_AMT, NCH_BENE_PTB_DDCTBL_AMT, NCH_BENE_PTB_COINSRNC_AMT, NCH_PRMRY_PYR_CLM_PD_AMT
+  - z_part_b_premium_cost
+      year, monthly_rate (numeric Part B premium)
+  - z_part_d_premium_cost
+      year, monthly_rate (numeric Part D premium)
 
-Output:
-  - kpi_year_final (year, svc, svc_group, race_group, cost_pmpm, cnt_pmpm, mlr_pct)
+Indexing/partition guidance (for performance):
+  - On claims tables, create BTREE indexes on (DESYNPUF_ID, year) and partition by month if available.
+  - On beneficiary_summary, index (DESYNPUF_ID, year) and BENE_RACE_CD.
+  - Premium tables indexed by (year).
+  - These enable efficient joins and aggregation and allow partition pruning when filtering by year/service.
+
+Service line denominator rules (very important for correctness):
+  - 'Total' does NOT equal OP + PROF + RX. For KPIs, compute as SUM(numerator) / SUM(denominator).
+  - Denominators and premiums by service line:
+      OP and PROF use Part B months/premiums (mm_b, prem_b).
+      RX uses Part D months/premiums (mm_d, prem_d).
+      Total uses mm_all = GREATEST(mm_b, mm_d) per member and prem_all = prem_b + prem_d.
+  - Race-group 'AB' represents all beneficiaries and is computed with the same SUM/SUM rule across every race.
+
+Race mapping (from BENE_RACE_CD):
+  1 Caucasian, 2 Black, 3 Other, 4 Asian, 5 Hispanic, 6 Native American, ELSE Unknown.
+
+Outputs:
+  - kpi_year_final columns:
+      year, svc (Total/OP/PROF/RX), svc_group (Total or Service Line), race_group,
+      cost_pmpm, cnt_pmpm, mlr_pct
+
+Notes:
+  - Monetary values are assumed USD.
+  - Avoid secrets and local file paths in this script.
+  - This script creates/overwrites kpi_year_final. Back up if needed.
 
 Last updated: 2025-09-28
 */
