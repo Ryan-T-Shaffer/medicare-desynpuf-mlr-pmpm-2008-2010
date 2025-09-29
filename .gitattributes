@@ -11,6 +11,8 @@ sql/** linguist-vendored=false
 sql/** linguist-generated=false
 data_ingestion_method/** linguist-vendored=false
 data_ingestion_method/** linguist-generated=false
+# remove sample code from percentage math (files still visible)
+data_ingestion_method/samples/** linguist-vendored
 
 # Exclude non-code from language % (helps SQL appear)
 assets/**      linguist-documentation
@@ -21,6 +23,7 @@ assets/**      linguist-documentation
 **/*.svg       linguist-documentation
 **/*.md        linguist-documentation
 COPYRIGHT      linguist-documentation
+
 
 # OPTIONAL: if Python still dominates after this, uncomment one of these:
 # data_ingestion_method/samples/** linguist-vendored
