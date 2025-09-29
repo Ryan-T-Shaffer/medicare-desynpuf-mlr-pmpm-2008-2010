@@ -37,7 +37,7 @@ COPYRIGHT      linguist-documentation
 # data_ingestion_method/samples/** linguist-vendored
 
 # If you prefer surgical exclusions (only the two example files):
-# data_ingestion_method/samples/example_carrier_claims_parallel_load_functions.py linguist-vendored
+data_ingestion_method/samples/example_carrier_claims_parallel_load_functions.py linguist-vendored
 # data_ingestion_method/samples/example_carrier_claims_parallel_load_call.py      linguist-vendored
 
 # End of file
