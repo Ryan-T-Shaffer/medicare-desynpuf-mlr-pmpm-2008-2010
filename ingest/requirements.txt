@@ -1,0 +1,13 @@
+# requirements.txt — Ingestion (Sample)
+# © 2025 Ryan Shaffer. All rights reserved.
+# SAMPLE INGESTION ONLY — The full, production ETL/DDL codebase will be published soon.
+#
+# Purpose:
+# - This ingestion sample uses ONLY the Python standard library.
+# - There are NO third‑party pip packages to install for runtime.
+#
+# External (non‑pip) dependency required:
+# - MySQL Shell 8.0/8.4 (mysqlsh) with Classic Protocol support.
+#   Install from Oracle/MySQL distribution and run scripts via: `mysqlsh --py`.
+#
+# If your tooling requires a non-empty requirements.txt, you can keep this file as-is.
