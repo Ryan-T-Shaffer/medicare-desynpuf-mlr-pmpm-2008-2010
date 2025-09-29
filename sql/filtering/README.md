@@ -1,7 +1,7 @@
 # Filtering — Outpatient (SEGMENT = 0)
 
-**Goal**: keep only **beneficiary‑level** outpatient rows by enforcing `SEGMENT = 0`.  
-Rows where `SEGMENT ≠ 0` (e.g., aggregated/rolled‑up across multiple patients) are rejected at the **database boundary** via a `CHECK` constraint and therefore excluded from reporting.
+**Goal**: keep only **beneficiary‑level** outpatient rows by enforcing `SEGMENT = 1`.  
+Rows where `SEGMENT ≠ 1` (e.g., aggregated/rolled‑up across multiple patients) are rejected at the **database boundary** via a `CHECK` constraint and therefore excluded from reporting.
 
 > This folder contains the table‑level filter used by the report. Ingestion remains generic (no dataset‑specific filtering in code) and relies on this constraint.
 
@@ -24,7 +24,7 @@ Rows where `SEGMENT ≠ 0` (e.g., aggregated/rolled‑up across multiple patient
 ## How the pieces fit
 
 - **Ingestion** (MySQL Shell `util.import_table`) inserts raw rows.  
-- **Constraint** in `outpatient_segement_filter.sql` ensures only `SEGMENT = 0` rows land.  
+- **Constraint** in `outpatient_segement_filter.sql` ensures only `SEGMENT = 1` rows land.  
 - Any rejected rows surface as warnings in the ingest summary.
 
 ---
