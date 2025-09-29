@@ -1,4 +1,4 @@
-# Filtering — Outpatient (SEGMENT = 0)
+# Filtering — Outpatient (SEGMENT = 1)
 
 **Goal**: keep only **beneficiary‑level** outpatient rows by enforcing `SEGMENT = 1`.  
 Rows where `SEGMENT ≠ 1` (e.g., aggregated/rolled‑up across multiple patients) are rejected at the **database boundary** via a `CHECK` constraint and therefore excluded from reporting.
