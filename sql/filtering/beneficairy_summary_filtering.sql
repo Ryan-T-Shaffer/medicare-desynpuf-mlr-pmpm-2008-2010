@@ -1,96 +1,136 @@
 /* 
-  beneficiary_summary_filtering.sql
-  ---------------------------------
-  Goal:
-    Produce a clean, beneficiary-level cohort from `beneficiary_summary` using a
-    readable, stepwise (5-step) CTE pipeline and then materialize the result.
+  beneficiary_summary_filtering.sql  — DEMONSTRATION / HYPOTHETICAL EXAMPLE
+  -------------------------------------------------------------------------
+  Purpose (read me):
+    This file is a **hypothetical example** that demonstrates how I would filter
+    and clean a beneficiary-level dataset in MySQL 8.x. It is included in the
+    report to show employers my end-to-end filtering style (readability, data
+    quality gates, instrumentation, and safe materialization), not to assert that
+    these are the only “correct” cohort rules for your use case.
 
-  Why this structure:
-    - CTEs keep each filter focused and self-documenting.
-    - We only write to disk once (final INSERT), which is efficient.
-    - The final table can be indexed / joined by the rest of your report.
+  Non-destructive guarantee:
+    • Source table is **not** modified.
+    • The pipeline materializes to a demo table: `beneficiary_summary_filtered_demo`.
 
-  After running:
-    - You will have a refreshed table: beneficiary_summary_filtered
-    - Optional: uncomment the VIEW at the bottom to have a reusable logical defn.
+  What this demonstrates:
+    • Stepwise CTE pipeline (clear, testable gates).
+    • Data-quality checks (alive, valid birth, race present; optional coverage).
+    • Regional scoping using SSA `SP_STATE_CODE = 39` (Pennsylvania).
+    • Instrumentation (before/after row counts).
+    • Post-load validation (duplicates, nulls).
+    • Optional view + indexes you’d typically add downstream.
 
-  MySQL 8.x required.
+  Notes:
+    • `SP_STATE_CODE` in DE-SynPUF uses **SSA codes**; PA = 39.
+    • Uncomment the “coverage” step if your analysis requires it.
+    • Rename the destination table if you want this to be production, not demo.
 */
 
--- ---------------------------------------------------------------------------
--- (Optional) Peek at the raw table shape before starting
--- SELECT COUNT(*) FROM beneficiary_summary;
+/* --------------------------------------------------
+   0) Quick peek (optional during exploration)
+-------------------------------------------------- */
+-- SELECT COUNT(*) AS raw_count FROM beneficiary_summary;
 -- SELECT * FROM beneficiary_summary LIMIT 5;
--- ---------------------------------------------------------------------------
 
-/* =====================
-   Stepwise CTE pipeline
-   ===================== */
+/* ==================================================
+   1) CTE pipeline (readable, testable, single pass)
+   ================================================== */
 WITH
--- 1) Alive-only and real cohort.
-alive_real AS (
-  SELECT *
-  FROM beneficiary_summary
-  WHERE BENE_DEATH_DT IS NULL AND BENE_BIRTH_DT IS NOT NULL;
+raw AS (
+  SELECT * FROM beneficiary_summary
 ),
--- 2) Basic data quality on birth date.
+alive AS (
+  -- Keep beneficiaries without a recorded death date
+  SELECT * FROM raw
+  WHERE BENE_DEATH_DT IS NULL
+),
 valid_birth AS (
-  SELECT *
-  FROM alive_real
+  -- Sanity window; tune as needed for your study
+  SELECT * FROM alive
   WHERE BENE_BIRTH_DT BETWEEN '1900-01-01' AND '2010-12-31'
 ),
--- 3) Valid race to participant in the study
-valid_race AS (
-  SELECT *
-  FROM valid_birth
+/* OPTIONAL: uncomment if you want a coverage guardrail.
+has_coverage AS (
+  SELECT * FROM valid_birth
+  WHERE
+        COALESCE(BENE_SMI_CVRAGE_TOT_MONS, SMI_COV_MOS, 0) > 0   -- Part B months
+     OR COALESCE(PARTD_CVRAGE_TOT_MONS, PTD_COV_MOS, 0) > 0      -- Part D months
+),
+*/
+race_present AS (
+  SELECT * FROM valid_birth /* or FROM has_coverage */
   WHERE BENE_RACE_CD IS NOT NULL
 ),
--- 4) Filter to makesure all participants are in Pennsylvania, PA's SP_STATE_CODE is 39
-final_cohort AS (
-  SELECT *
-  FROM valid_race
+pa_only AS (
+  -- Pennsylvania by SSA state code (PA = 39)
+  SELECT * FROM race_present
   WHERE SP_STATE_CODE = 39
 ),
--- 5) Filter on makin
--- Final SELECT for ad-hoc checks (commented out in production runs)
--- SELECT * FROM final_cohort LIMIT 5
--- No more filtering required some counties in this study only have around 50 participants
--- So down filtering is not an option
--- ;
--- =====================
+final_cohort AS (
+  SELECT * FROM pa_only
+)
 
-/* ===============================
-   Materialize the final cohort
-   =============================== */
--- Create or refresh the destination table with the same structure as the source.
-CREATE TABLE IF NOT EXISTS beneficiary_summary_filtered LIKE beneficiary_summary;
-TRUNCATE TABLE beneficiary_summary_filtered;
+/* --------------------------------------------------
+   2) (Optional) Instrumentation — stepwise counts
+   --------------------------------------------------
+   Keeps the “show your work” vibe: how each gate impacts rows.
+   Comment out in production if you don’t need it.
+-------------------------------------------------- */
+,
+counts AS (
+  SELECT 'raw' AS step, (SELECT COUNT(*) FROM raw) AS n UNION ALL
+  SELECT 'alive', (SELECT COUNT(*) FROM alive) UNION ALL
+  SELECT 'valid_birth', (SELECT COUNT(*) FROM valid_birth) UNION ALL
+  /* SELECT 'has_coverage', (SELECT COUNT(*) FROM has_coverage) UNION ALL */  -- if enabled
+  SELECT 'race_present', (SELECT COUNT(*) FROM race_present) UNION ALL
+  SELECT 'pa_only', (SELECT COUNT(*) FROM pa_only) UNION ALL
+  SELECT 'final_cohort', (SELECT COUNT(*) FROM final_cohort)
+)
+SELECT * FROM counts;
+-- (You can remove the SELECT * FROM counts if you prefer a quieter run.)
 
--- Insert the filtered cohort in one pass.
-INSERT INTO beneficiary_summary_filtered
-SELECT *
-FROM final_cohort;
+/* ==================================================
+   3) Materialize (non-destructive demo target)
+   ================================================== */
+CREATE TABLE IF NOT EXISTS beneficiary_summary_filtered_demo LIKE beneficiary_summary;
+TRUNCATE TABLE beneficiary_summary_filtered_demo;
 
--- Optional: sanity checks
--- SELECT COUNT(*) AS filtered_count FROM beneficiary_summary_filtered;
--- SELECT * FROM beneficiary_summary_filtered LIMIT 5;
+INSERT INTO beneficiary_summary_filtered_demo
+SELECT * FROM final_cohort;
 
--- (Optional) Helpful indexes for downstream joins/filters
--- ALTER TABLE beneficiary_summary_filtered
---   ADD INDEX idx_bsf_year (year),
---   ADD INDEX idx_bsf_id_year (DESYNPUF_ID, year);
+/* --------------------------------------------------
+   4) Post-load validation — quick data quality checks
+-------------------------------------------------- */
+-- Expect zero
+SELECT COUNT(*) AS dq_null_ids
+FROM beneficiary_summary_filtered_demo
+WHERE DESYNPUF_ID IS NULL;
 
--- (Optional) A view that mirrors the same logic (handy for exploration)
--- DROP VIEW IF EXISTS v_beneficiary_summary_filtered;
--- CREATE VIEW v_beneficiary_summary_filtered AS
+-- Look for accidental duplicates by ID + year
+SELECT DESYNPUF_ID, `year`, COUNT(*) AS dup_rows
+FROM beneficiary_summary_filtered_demo
+GROUP BY DESYNPUF_ID, `year`
+HAVING COUNT(*) > 1;
+
+-- Final cohort size
+SELECT COUNT(*) AS final_rowcount FROM beneficiary_summary_filtered_demo;
+
+-- Optional indexes that help most downstream joins/filters
+-- ALTER TABLE beneficiary_summary_filtered_demo
+--   ADD INDEX idx_bsf_year (`year`),
+--   ADD INDEX idx_bsf_id_year (DESYNPUF_ID, `year`);
+
+/* --------------------------------------------------
+   5) Optional: logical view for ad-hoc reuse
+-------------------------------------------------- */
+-- DROP VIEW IF EXISTS v_beneficiary_summary_filtered_demo;
+-- CREATE VIEW v_beneficiary_summary_filtered_demo AS
 -- WITH
---   alive AS (SELECT * FROM beneficiary_summary WHERE BENE_DEATH_DT IS NULL),
---   in_years AS (SELECT * FROM alive WHERE `year` IN (2008, 2009, 2010)),
---   valid_birth AS (SELECT * FROM in_years WHERE BENE_BIRTH_DT BETWEEN '1900-01-01' AND '2010-12-31'),
---   has_coverage AS (
---     SELECT * FROM valid_birth
---     WHERE COALESCE(BENE_SMI_CVRAGE_TOT_MONS, SMI_COV_MOS, 0) > 0
---        OR COALESCE(PARTD_CVRAGE_TOT_MONS, PTD_COV_MOS, 0) > 0
---   ),
---   final_cohort AS (SELECT * FROM has_coverage WHERE BENE_RACE_CD IS NOT NULL)
+--   raw AS (SELECT * FROM beneficiary_summary),
+--   alive AS (SELECT * FROM raw WHERE BENE_DEATH_DT IS NULL),
+--   valid_birth AS (SELECT * FROM alive WHERE BENE_BIRTH_DT BETWEEN '1900-01-01' AND '2010-12-31'),
+--   /* has_coverage AS ( ... ) */
+--   race_present AS (SELECT * FROM valid_birth WHERE BENE_RACE_CD IS NOT NULL),
+--   pa_only AS (SELECT * FROM race_present WHERE SP_STATE_CODE = 39),
+--   final_cohort AS (SELECT * FROM pa_only)
 -- SELECT * FROM final_cohort;
