@@ -16,12 +16,12 @@ This folder documents how the project filters data **at the database boundary** 
 - `beneficairy_summary_filtering.sql` — demonstration pipeline that materializes a filtered cohort to `beneficiary_summary_filtered_demo` and runs basic validation queries.
 
 **Ingestion samples (clickable)**
-[![Open functions.py](https://img.shields.io/badge/Open-functions.py-blue)](../../ingest/samples/example_carrier_claims_parallel_load_functions.py)
-[![Open call.py](https://img.shields.io/badge/Open-call.py-blue)](../../ingest/samples/example_carrier_claims_parallel_load_call.py)
+[![Open functions.py](https://img.shields.io/badge/Open-functions.py-blue)](../../data_ingestion_method/samples/example_carrier_claims_parallel_load_functions.py)
+[![Open call.py](https://img.shields.io/badge/Open-call.py-blue)](../../data_ingestion_method/samples/example_carrier_claims_parallel_load_call.py)
 
 Plain links:
-- [Sample loader (functions)](../../ingest/samples/example_carrier_claims_parallel_load_functions.py)  
-- [Sample loader (caller)](../../ingest/samples/example_carrier_claims_parallel_load_call.py)
+- [Sample loader (functions)](../../data_ingestion_method/samples/example_carrier_claims_parallel_load_functions.py)  
+- [Sample loader (caller)](../../data_ingestion_method/samples/example_carrier_claims_parallel_load_call.py)
 
 ---
 
