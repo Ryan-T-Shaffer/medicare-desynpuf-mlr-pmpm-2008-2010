@@ -1,11 +1,11 @@
-/*
+﻿/*
 Copyright (c) 2025 Ryan Shaffer. All rights reserved.
 Viewing only. No permission to copy, modify, distribute, or use without written consent.
 Contact: 20rs2002@gmail.com
 */
 /*
 File: sql/kpi_query.sql
-Purpose: Compute KPI rollups (Cost PMPM, Count PMPM, MLR) by year (2008-2010), service line (Total, OP, PROF, RX),
+Purpose: Compute KPI rollups (PMPM Cost, Count PMPM, MLR) by year (2008-2010), service line (Total, OP, PROF, RX),
          and race_group (AB plus named race groups). Returns a single table suitable for dashboards.
 
 Tested: MySQL 8.0+ (CTEs required)
@@ -136,7 +136,7 @@ member_year AS (
   LEFT JOIN z_part_d_premium_cost pd USING (`year`)
 ),
 
-/* 3) Denominators/premiums by race + an AB rollup (Σ over all races) */
+/* 3) Denominators/premiums by race + an AB rollup (Î£ over all races) */
 denoms AS (
   /* AB: sum across all races */
   SELECT
@@ -264,7 +264,7 @@ SELECT
   CASE WHEN s.svc = 'ALL' THEN 'Total' ELSE 'Service Line' END AS svc_group,
   s.race_group,
 
-  /* Cost PMPM = Σ Allowed / Σ Member Months (svc-specific denominator) */
+  /* PMPM Cost = Î£ Allowed / Î£ Member Months (svc-specific denominator) */
   ROUND(
     s.allowed /
     CASE
@@ -274,7 +274,7 @@ SELECT
     END, 2
   ) AS cost_pmpm,
 
-  /* Count PMPM = Σ Claim Count / Σ Member Months */
+  /* Count PMPM = Î£ Claim Count / Î£ Member Months */
   ROUND(
     s.cnt /
     CASE
@@ -284,7 +284,7 @@ SELECT
     END, 2
   ) AS cnt_pmpm,
 
-  /* MLR (%) = Σ Allowed / Σ Premium Revenue * 100 */
+  /* MLR (%) = Î£ Allowed / Î£ Premium Revenue * 100 */
   ROUND(
     (s.allowed /
      CASE
@@ -302,3 +302,4 @@ ORDER BY s.`year`, svc, s.race_group;
 
 ALTER TABLE kpi_year_final
   ADD PRIMARY KEY (`year`, svc, race_group);
+
