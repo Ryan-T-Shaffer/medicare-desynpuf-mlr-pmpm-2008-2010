@@ -16,9 +16,6 @@ Rows where `SEGMENT ≠ 1` (e.g., aggregated/rolled‑up across multiple patient
 - [Sample loader (functions)](../../ingest/samples/example_carrier_claims_parallel_load_functions.py)  
 - [Sample loader (caller)](../../ingest/samples/example_carrier_claims_parallel_load_call.py)
 
-> Tip: after committing, you can link to a specific function/lines by appending anchors, e.g.  
-> `../../ingest/samples/example_carrier_claims_parallel_load_functions.py#L120-L190`
-
 ---
 
 ## How the pieces fit
