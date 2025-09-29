@@ -10,13 +10,6 @@ This repository includes a single SQL script that computes **Cost PMPM**, **Coun
 - **MySQL 8.0+** (uses CTEs).
 - Tables referenced in the SQL header (`beneficiary_summary`, `prescript_drug_events`, `carrier_claims`, `outpatient_claims`, `z_part_b_premium_cost`, `z_part_d_premium_cost`). See the header in `sql/kpi_query.sql` for required columns and assumptions.
 
-## How to run
-In MySQL Shell or the MySQL CLI from the repo root:
-```sql
-SOURCE sql/kpi_query.sql;
-```
-This will create or overwrite `kpi_year_final`.
-
 ## Output schema (`kpi_year_final`)
 - `year`
 - `svc` — `Total`, `OP`, `PROF`, or `RX`
