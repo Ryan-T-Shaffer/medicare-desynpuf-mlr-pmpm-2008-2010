@@ -17,6 +17,9 @@ Notes:
   - No credentials or local file paths are included.
   - If you prefer the original labels ('carrier_claims','outpatient_claims','prescript_drug_events'),
     adjust the CASE mappings in cte_claims and cte_cost.
+
+This graph is used to make the 5 sliced graphs in the middle of the table that show distributions of different
+component measures (numerator and denominator values) of the 3 KPIs MLR, Cost PMPM, and Count PMPM.
 */
 
 DROP TABLE IF EXISTS calc_dist_all;
@@ -193,7 +196,11 @@ FROM cte_cost AS co
 /* ----------------------------------------------------------
    Additional convenience table (requires kpi_year_final):
    Creates an AB-only slice from the KPI results.
-   Run this after kpi_query.sql has created kpi_year_final.
+   Basically filters on the combined total All Beneficiaries
+   instead of individually by race. Important for making the
+   All beneficiairy KPI graphs and the KPI YoY percent 
+   change graphs. Run this after kpi_query.sql has 
+   created kpi_year_final.
 -----------------------------------------------------------*/
 DROP TABLE IF EXISTS kpi_year_final_ab;
 
