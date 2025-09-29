@@ -10,7 +10,7 @@ sql/** linguist-vendored=false
 
 # 3) (Optional) If you want to exclude large assets or docs from language stats,
 #    uncomment these. It can make SQL show up with a bigger percentage.
-# assets/** linguist-documentation
-# **/*.png linguist-documentation
+assets/** linguist-documentation
+**/*.png linguist-documentation
 # **/*.jpg linguist-documentation
 # **/*.md  linguist-documentation
