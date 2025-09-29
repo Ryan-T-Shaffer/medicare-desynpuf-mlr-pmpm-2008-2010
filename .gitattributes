@@ -1,16 +1,43 @@
-# .gitattributes — help GitHub Linguist count SQL
-# Linguist docs: https://github.com/github/linguist#overrides
-#
-# 1) Ensure .sql files are classified as SQL (GitHub shows "SQL", not "MySQL").
+# .gitattributes — Tune GitHub Linguist language stats
+# Docs: https://github.com/github/linguist#overrides
+
+##############################
+# 1) Ensure SQL is recognized
+##############################
+# GitHub shows the generic "SQL" language (not "MySQL").
 *.sql linguist-language=SQL
 
-# 2) Make sure the sql/ folder is not treated as vendored (it usually isn't,
-#    but this line prevents accidental exclusion if folder names change).
+# Never treat our SQL directories as vendored/ignored.
 sql/** linguist-vendored=false
+sql/ddl_queries/** linguist-vendored=false
+sql/filtering_queries/** linguist-vendored=false
+sql/kpi_queries/** linguist-vendored=false
 
-# 3) (Optional) If you want to exclude large assets or docs from language stats,
-#    uncomment these. It can make SQL show up with a bigger percentage.
-assets/** linguist-documentation
-**/*.png linguist-documentation
-# **/*.jpg linguist-documentation
-# **/*.md  linguist-documentation
+#############################################
+# 2) Exclude non-code assets & documentation
+#    (Start with these to move the needle)
+#############################################
+assets/**      linguist-documentation
+**/*.png       linguist-documentation
+**/*.jpg       linguist-documentation
+**/*.jpeg      linguist-documentation
+**/*.gif       linguist-documentation
+**/*.svg       linguist-documentation
+**/*.md        linguist-documentation
+COPYRIGHT      linguist-documentation
+
+#####################################################################
+# 3) Optional (uncomment if SQL still doesn't appear in the Languages
+#    bar because Python dominates by size):
+#
+#    Exclude the *sample* Python ingestion directory from statistics.
+#    This keeps the code visible in the repo but removes it from the
+#    language percentage calculation.
+#####################################################################
+# data_ingestion_method/samples/** linguist-vendored
+
+# If you prefer surgical exclusions (only the two example files):
+# data_ingestion_method/samples/example_carrier_claims_parallel_load_functions.py linguist-vendored
+# data_ingestion_method/samples/example_carrier_claims_parallel_load_call.py      linguist-vendored
+
+# End of file
