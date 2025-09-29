@@ -1,0 +1,95 @@
+# .gitignore — Ingestion (Sample)
+# © 2025 Ryan Shaffer. All rights reserved.
+# SAMPLE INGESTION ONLY — The full, production ETL/DDL codebase will be published soon.
+
+#############################
+# Python cache / build
+#############################
+__pycache__/
+*.py[cod]
+*$py.class
+dist/
+build/
+*.egg-info/
+pip-wheel-metadata/
+
+#############################
+# Virtual environments
+#############################
+.venv/
+venv/
+env/
+ENV/
+
+#############################
+# Tooling caches
+#############################
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+#############################
+# Logs / temp files
+#############################
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.orig
+*.rej
+
+#############################
+# Environment & secrets
+#############################
+.env
+.env.local
+# Keep the template
+!.env.example
+
+#############################
+# Ingestion artifacts (optional but recommended)
+# If you stage data or rejected rows inside this folder, keep them out of git.
+#############################
+# Common directories where CSVs might live locally:
+data/
+input/
+tmp/
+temp/
+CarrierClaims/
+
+# Rejected/bad rows from imports
+reject/
+rejects/
+rejected/
+bad_rows/
+*.bad
+*.rej
+*.rejects
+*.err
+*.out
+
+#############################
+# OS / Editor noise
+#############################
+.DS_Store
+Thumbs.db
+desktop.ini
+Icon?
+._*
+.idea/
+.vscode/
+*.code-workspace
+
+#############################
+# MySQL Shell (rare in repo, but ignore if present)
+#############################
+.mysqlsh_history
+mysqlsh.log
+
+# End of file
