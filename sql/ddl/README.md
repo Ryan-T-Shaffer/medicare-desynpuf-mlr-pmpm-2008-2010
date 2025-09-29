@@ -12,16 +12,6 @@ Compute three per-year distributions and unify them for dashboard consumption:
 2. Claims-count distribution (`carrier_claims`, `outpatient_claims`, `prescript_drug_events`) — per-year percentages  
 3. Cost-amount distribution  (`carrier_claims`, `outpatient_claims`, `prescript_drug_events`) — per-year percentages
 
-## How to run
-From the repository root in MySQL Shell or the MySQL CLI:
-```sql
-SOURCE sql/ddl/create_remaining_tables.sql;
-```
-This **drops (if exists) and creates** `calc_dist_all` with columns:
-```
-specific_calculation, year, legend, pct
-```
-
 ## Dependencies & assumptions
 Tables (and key columns) required by the script:
 - `beneficiary_summary`: `year`, `BENE_SMI_CVRAGE_TOT_MONS`, `PLAN_CVRG_MOS_NUM`
