@@ -9,7 +9,7 @@ Rows where `SEGMENT ≠ 1` (e.g., aggregated/rolled‑up across multiple patient
 
 ## Jump to the ingestion samples (clickable)
 
-[![Example Loader Functions.py](https://img.shields.io/badge/Open-functions.py-blue)](../../ingest/samples/example_carrier_claims_parallel_load_functions.py)
+[![Example Loader Functions.py](https://img.shields.io/badge/Open-.py-blue)](../../ingest/samples/example_carrier_claims_parallel_load_functions.py)
 [![Example Loader Call.py](https://img.shields.io/badge/Open-call.py-blue)](../../ingest/samples/example_carrier_claims_parallel_load_call.py)
 
 **Plain links:**  
