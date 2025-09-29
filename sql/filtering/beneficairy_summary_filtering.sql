@@ -27,41 +27,35 @@
    Stepwise CTE pipeline
    ===================== */
 WITH
--- 1) Alive-only cohort (your initial filter).
-alive AS (
+-- 1) Alive-only and real cohort.
+alive_real AS (
   SELECT *
   FROM beneficiary_summary
-  WHERE BENE_DEATH_DT IS NULL
+  WHERE BENE_DEATH_DT IS NULL AND BENE_BIRTH_DT IS NOT NULL;
 ),
--- 2) Keep only study years of interest.
-in_years AS (
-  SELECT *
-  FROM alive
-  WHERE `year` IN (2008, 2009, 2010)
-),
--- 3) Basic data quality on birth date (tweak bounds if needed).
+-- 2) Basic data quality on birth date.
 valid_birth AS (
   SELECT *
-  FROM in_years
+  FROM alive_real
   WHERE BENE_BIRTH_DT BETWEEN '1900-01-01' AND '2010-12-31'
 ),
--- 4) Coverage guardrail: require at least some Part B or Part D coverage months.
---    Replace column names if yours differ. The COALESCE(...) chain tolerates synonyms.
-has_coverage AS (
+-- 3) Valid race to participant in the study
+valid_race AS (
   SELECT *
   FROM valid_birth
-  WHERE
-        COALESCE(BENE_SMI_CVRAGE_TOT_MONS, SMI_COV_MOS, 0) > 0   -- Part B months (examples)
-     OR COALESCE(PARTD_CVRAGE_TOT_MONS, PTD_COV_MOS, 0) > 0      -- Part D months (examples)
+  WHERE BENE_RACE_CD IS NOT NULL
 ),
--- 5) Basic demographics completeness (race present). Adjust as needed.
+-- 4) Filter to makesure all participants are in Pennsylvania, PA's SP_STATE_CODE is 39
 final_cohort AS (
   SELECT *
-  FROM has_coverage
-  WHERE BENE_RACE_CD IS NOT NULL
-)
+  FROM valid_race
+  WHERE SP_STATE_CODE = 39
+),
+-- 5) Filter on makin
 -- Final SELECT for ad-hoc checks (commented out in production runs)
 -- SELECT * FROM final_cohort LIMIT 5
+-- No more filtering required some counties in this study only have around 50 participants
+-- So down filtering is not an option
 -- ;
 -- =====================
 
