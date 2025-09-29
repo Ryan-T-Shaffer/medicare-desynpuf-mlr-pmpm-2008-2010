@@ -1,22 +1,18 @@
-# .gitattributes — Tune GitHub Linguist language stats
-# Docs: https://github.com/github/linguist#overrides
+# (Optional) see what you have now
+type .gitattributes
 
-##############################
-# 1) Ensure SQL is recognized
-##############################
-# GitHub shows the generic "SQL" language (not "MySQL").
+# Overwrite with recommended settings
+@'
+# Count .sql as SQL (GitHub shows the generic "SQL")
 *.sql linguist-language=SQL
 
-# Never treat our SQL directories as vendored/ignored.
+# Make sure code dirs are NOT treated as vendored/generated
 sql/** linguist-vendored=false
-sql/ddl_queries/** linguist-vendored=false
-sql/filtering_queries/** linguist-vendored=false
-sql/kpi_queries/** linguist-vendored=false
+sql/** linguist-generated=false
+data_ingestion_method/** linguist-vendored=false
+data_ingestion_method/** linguist-generated=false
 
-#############################################
-# 2) Exclude non-code assets & documentation
-#    (Start with these to move the needle)
-#############################################
+# Exclude non-code from language % (helps SQL appear)
 assets/**      linguist-documentation
 **/*.png       linguist-documentation
 **/*.jpg       linguist-documentation
@@ -26,18 +22,12 @@ assets/**      linguist-documentation
 **/*.md        linguist-documentation
 COPYRIGHT      linguist-documentation
 
-#####################################################################
-# 3) Optional (uncomment if SQL still doesn't appear in the Languages
-#    bar because Python dominates by size):
-#
-#    Exclude the *sample* Python ingestion directory from statistics.
-#    This keeps the code visible in the repo but removes it from the
-#    language percentage calculation.
-#####################################################################
+# OPTIONAL: if Python still dominates after this, uncomment one of these:
 # data_ingestion_method/samples/** linguist-vendored
-
-# If you prefer surgical exclusions (only the two example files):
-data_ingestion_method/samples/example_carrier_claims_parallel_load_functions.py linguist-vendored
+# data_ingestion_method/samples/example_carrier_claims_parallel_load_functions.py linguist-vendored
 # data_ingestion_method/samples/example_carrier_claims_parallel_load_call.py      linguist-vendored
+'@ | Set-Content -Encoding UTF8 .gitattributes
 
-# End of file
+git add .gitattributes
+git commit -m "Linguist: count SQL; exclude docs/assets from language stats"
+git push
