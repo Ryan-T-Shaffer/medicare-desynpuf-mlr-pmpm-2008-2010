@@ -17,34 +17,6 @@ This folder contains a minimal, well-documented sample for bulk‑loading `carri
 
 ---
 
-## Quick Start
-
-1. **Open MySQL Shell in Python mode (Classic Protocol):**
-   ```bash
-   mysqlsh --uri user@host:3306 -p --py
-   ```
-   *Classic Protocol* (TCP 3306) is required to support `LOCAL INFILE` semantics for `util.import_table`.
-
-2. **Run the caller with your parameters:**
-   ```bash
-   mysqlsh --uri user@host:3306 -p --py -f example_carrier_claims_parallel_load_call.py --        --folder "/path/to/CarrierClaims"        --schema synpuf        --table carrier_claims        --threads 8        --pattern "*.csv"
-   ```
-
-3. **Alternatively, use environment variables:**
-   ```bash
-   # Windows cmd/PowerShell:
-   set DATA_DIR=C:\data\CarrierClaims
-   set THREADS=8
-
-   # bash/zsh:
-   export DATA_DIR="/data/CarrierClaims"
-   export THREADS=8
-
-   mysqlsh --uri user@host:3306 -p --py -f example_carrier_claims_parallel_load_call.py --        --schema synpuf --table carrier_claims
-   ```
-
----
-
 ## Assumptions & Dependencies (what and why)
 
 - **MySQL Shell 8.0/8.4** running in **Classic Protocol** (`mysqlsh --py` connected to port 3306).  
@@ -129,23 +101,6 @@ This folder contains a minimal, well-documented sample for bulk‑loading `carri
 - **Weird characters/encoding**: confirm `characterSet="utf8mb4"` and the source CSV encoding; adjust if needed.
 - **Newlines mismatch**: if files are Unix‑style, update `linesTerminatedBy="\n"`.
 - **Performance stalls**: reduce `--threads` for single large files or when disk contention is high.
-
----
-
-## Example Commands
-
-**Windows (PowerShell)**
-```powershell
-set DATA_DIR=C:\data\CarrierClaims
-mysqlsh --uri root@localhost:3306 -p --py -f example_carrier_claims_parallel_load_call.py -- `
-  --schema synpuf --table carrier_claims --threads 8
-```
-
-**macOS/Linux (bash/zsh)**
-```bash
-export DATA_DIR="/data/CarrierClaims"
-mysqlsh --uri root@localhost:3306 -p --py -f example_carrier_claims_parallel_load_call.py --   --schema synpuf --table carrier_claims --threads 8
-```
 
 ---
 
