@@ -1,6 +1,6 @@
 ﻿# Medicare KPI Query (MySQL 8.0)
 
-This repository includes a single SQL script that computes **PMPM Cost**, **Count PMPM**, and **MLR** by **year**, **service line** (Total, OP, PROF, RX), and **race group**, including the **AB (all beneficiaries)** rollup using **sum(numerators) / sum(denominators)**. The output is a single table intended for dashboards and analysis.
+This repository includes a single SQL script that computes **PMPM Cost**, **PMPM Count**, and **MLR** by **year**, **service line** (Total, OP, PROF, RX), and **race group**, including the **AB (all beneficiaries)** rollup using **sum(numerators) / sum(denominators)**. The output is a single table intended for dashboards and analysis.
 
 ## Files
 - `sql/kpi_query.sql` â€” main query that creates `kpi_year_final` with KPI columns.
@@ -41,4 +41,5 @@ This repository includes a single SQL script that computes **PMPM Cost**, **Coun
 
 ## Copyright
 All content in this repository is copyright (c) 2025 Ryan Shaffer. All rights reserved.
+
 

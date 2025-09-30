@@ -19,7 +19,7 @@ Notes:
     adjust the CASE mappings in cte_claims and cte_cost.
 
 This graph is used to make the 5 sliced graphs in the middle of the table that show distributions of different
-component measures (numerator and denominator values) of the 3 KPIs MLR, PMPM Cost, and Count PMPM.
+component measures (numerator and denominator values) of the 3 KPIs MLR, PMPM Cost, and PMPM Count.
 */
 
 DROP TABLE IF EXISTS calc_dist_all;
@@ -208,4 +208,5 @@ CREATE TABLE kpi_year_final_ab AS
 SELECT *
 FROM kpi_year_final
 WHERE race_group = 'AB';
+
 
