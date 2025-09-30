@@ -24,9 +24,9 @@ The Pennsylvania Department of Aging, specifically the Secretary's Office and th
 - **PMPM Cost Trends by SVC & Race Group:** Medicare's average spending on care for each beneficiary every month for a specific year.
 - **PMPM Count Trends by SVC & Race Group:** The number of claims on average each beneficiary uses per month in order to get care.
 
-The SQL queries used to inspect and clean the data for this analysis are available here [link].
+The SQL queries used to inspect and clean the data for this analysis are available here [link](./assets/sql/filtering_queries/beneficiary_summary_filtering.sql).
 
-Targeted SQL queries regarding various business questions can be found here [link].
+Targeted SQL queries regarding various business questions can be found here [link](./assets/sql/kpi_queries/kpi_queries.sql).
 
 An interactive Power BI dashboard used to report and explore sales trends can be found here [link].
 
@@ -130,7 +130,7 @@ Based on the insights and findings above, we recommend the Pennsylvania Departme
 * **Publish an equity scorecard**: track gaps in use and spending by race group and svc, and fund interventions where gaps fail to narrow across review cycles. This is needed because each KPI shows race group declines by service in 2010 that move in parallel, which can mask persistent level differences (**MLR**: **-44.1%** to **-45.6%**; **PMPM Cost**: **-37.8%** to **-40.4%**; **PMPM Count**: **-34.8%** to **-35.9%**). A recurring scorecard keeps attention on closing gaps rather than only tracking service-line totals.
   
 # Assumptions and Caveats:
-Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
+Throughout the analysis, assumptions and caveats were made to manage challenges with the data:
 
 **Caveats:** Beneficiary opt-outs and data manipulation in 2010 greatly affected KPI results.
 * **Increased opt-outs:** A meaningful share of beneficiaries likely opted out in 2010 due to heightened privacy concerns among those with rare or high-cost conditions being identified through the dataset, reducing representation of heavier utilizers.
