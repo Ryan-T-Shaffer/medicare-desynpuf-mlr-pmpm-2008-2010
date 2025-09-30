@@ -49,7 +49,7 @@ valid_birth AS (
   SELECT * FROM alive
   WHERE BENE_BIRTH_DT BETWEEN '1900-01-01' AND '2010-12-31'
 ),
-/* OPTIONAL: uncomment if you want a coverage guardrail.
+/* OPTIONAL: uncomment if you want a no coverage guardrail.
 has_coverage AS (
   SELECT * FROM valid_birth
   WHERE
