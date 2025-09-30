@@ -1,4 +1,4 @@
-﻿# Medicare DE-SynPUF Analysis (MLR, PMPM Cost, PMPM Count), 2008â€“2010
+﻿# Medicare DE-SynPUF Analysis (MLR, PMPM Cost, PMPM Count), 2008-2010
 
 ## Table of Contents
 - [Project Background](#project-background)
