@@ -26,7 +26,7 @@ The Pennsylvania Department of Aging, specifically the Secretary's Office and th
 
 The SQL queries used to inspect and clean the data for this analysis are available here [link](./sql/filtering_queries/beneficiary_summary_filtering.sql#L38).
 
-Targeted SQL queries regarding various business questions can be found here [link](./sql/kpi_queries/kpi_query.sql#L50).
+Targeted SQL queries regarding various business questions can be found here [link](./sql/kpi_queries/kpi_query.sql#L67).
 
 An interactive Power BI dashboard used to report and explore sales trends can be found here [link].
 
