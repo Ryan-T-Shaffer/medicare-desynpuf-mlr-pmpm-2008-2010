@@ -1,10 +1,10 @@
-# Medicare KPI Query (MySQL 8.0)
+﻿# Medicare KPI Query (MySQL 8.0)
 
-This repository includes a single SQL script that computes **Cost PMPM**, **Count PMPM**, and **MLR** by **year**, **service line** (Total, OP, PROF, RX), and **race group**, including the **AB (all beneficiaries)** rollup using **sum(numerators) / sum(denominators)**. The output is a single table intended for dashboards and analysis.
+This repository includes a single SQL script that computes **PMPM Cost**, **Count PMPM**, and **MLR** by **year**, **service line** (Total, OP, PROF, RX), and **race group**, including the **AB (all beneficiaries)** rollup using **sum(numerators) / sum(denominators)**. The output is a single table intended for dashboards and analysis.
 
 ## Files
-- `sql/kpi_query.sql` — main query that creates `kpi_year_final` with KPI columns.
-- `LICENSE` — license covering reuse of this SQL in the repository.
+- `sql/kpi_query.sql` â€” main query that creates `kpi_year_final` with KPI columns.
+- `LICENSE` â€” license covering reuse of this SQL in the repository.
 
 ## Requirements
 - **MySQL 8.0+** (uses CTEs).
@@ -12,22 +12,22 @@ This repository includes a single SQL script that computes **Cost PMPM**, **Coun
 
 ## Output schema (`kpi_year_final`)
 - `year`
-- `svc` — `Total`, `OP`, `PROF`, or `RX`
-- `svc_group` — `Total` or `Service Line`
-- `race_group` — per‑race values plus `AB` (all beneficiaries)
+- `svc` â€” `Total`, `OP`, `PROF`, or `RX`
+- `svc_group` â€” `Total` or `Service Line`
+- `race_group` â€” perâ€‘race values plus `AB` (all beneficiaries)
 - `cost_pmpm`
 - `cnt_pmpm`
 - `mlr_pct`
 
 ## Correctness rules (important)
-- **Total is not OP + PROF + RX.** KPIs are computed as **Σ numerators / Σ denominators** with service‑specific denominators:
-  - `Total` uses `mm_all` (per‑member `GREATEST(mm_b, mm_d)`) and `prem_all`.
+- **Total is not OP + PROF + RX.** KPIs are computed as **Î£ numerators / Î£ denominators** with serviceâ€‘specific denominators:
+  - `Total` uses `mm_all` (perâ€‘member `GREATEST(mm_b, mm_d)`) and `prem_all`.
   - `RX` uses Part D months/premiums (`mm_d`, `prem_d`).
   - `OP` and `PROF` use Part B months/premiums (`mm_b`, `prem_b`).
-- **AB (all beneficiaries)** is computed with the same **Σ/Σ rule** across all race groups (not an average of ratios).
+- **AB (all beneficiaries)** is computed with the same **Î£/Î£ rule** across all race groups (not an average of ratios).
 
 ## Performance expectations (brief)
-- Designed for **large, partitioned claims tables**; practical on a laptop if tables are month‑partitioned and key columns are indexed.
+- Designed for **large, partitioned claims tables**; practical on a laptop if tables are monthâ€‘partitioned and key columns are indexed.
 - Recommended BTREE indexes:
   - Claims tables: `(DESYNPUF_ID, year)` (and any date/partition keys used in joins).
   - `beneficiary_summary`: `(DESYNPUF_ID, year)`, `BENE_RACE_CD`.
@@ -36,8 +36,9 @@ This repository includes a single SQL script that computes **Cost PMPM**, **Coun
 - Use `EXPLAIN` / `EXPLAIN ANALYZE` to verify partition pruning and index use.
 
 ## Data/privacy
-- The SQL assumes de‑identified data and contains **no credentials or local file paths**.
+- The SQL assumes deâ€‘identified data and contains **no credentials or local file paths**.
 - If you publish loaders, keep secrets out of scripts and the repo history.
 
 ## Copyright
 All content in this repository is copyright (c) 2025 Ryan Shaffer. All rights reserved.
+
