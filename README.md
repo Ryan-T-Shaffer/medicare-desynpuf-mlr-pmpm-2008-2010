@@ -24,9 +24,9 @@ The Pennsylvania Department of Aging, specifically the Secretary's Office and th
 - **PMPM Cost Trends by SVC & Race Group:** Medicare's average spending on care for each beneficiary every month for a specific year.
 - **PMPM Count Trends by SVC & Race Group:** The number of claims on average each beneficiary uses per month in order to get care.
 
-The SQL queries used to inspect and clean the data for this analysis are available here [link](./assets/sql/filtering_queries/beneficiary_summary_filtering.sql).
+The SQL queries used to inspect and clean the data for this analysis are available here [link](./sql/filtering_queries/beneficiary_summary_filtering.sql).
 
-Targeted SQL queries regarding various business questions can be found here [link](./assets/sql/kpi_queries/kpi_queries.sql).
+Targeted SQL queries regarding various business questions can be found here [link](./sql/kpi_queries/kpi_query.sql).
 
 An interactive Power BI dashboard used to report and explore sales trends can be found here [link].
 
