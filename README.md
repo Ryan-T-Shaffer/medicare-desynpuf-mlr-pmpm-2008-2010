@@ -48,6 +48,7 @@ ERD for CMS 2008-2010 DE-SynPUF
 
 ### Overview of Findings
 Across the three KPIs, Medicare's performance for beneficiaries declined sharply by 2010. Under the Total group, KPIs rose from 2008-2009 (**MLR** **+2.1%**, **PMPM Cost** **+9.5%**, **PMPM Count** **+6.3%**) and then fell from 2009-2010 (**-45.5%**, **-37.8%**, **-35.8%**), ending at **MLR** **164.2%**, **$223.8** PMPM, and **2.2 claims PMPM**. Accessibility contracted broadly in 2010. **PMPM Count** fell across svcs: Total **-35.8%**, OP **-44.0%**, PROF **-36.1%**, and RX **-39.7%**. Equity trends based on Cost and **PMPM Count** by race group moved in parallel but for different svcs; for example, the Other group had [lower equity](./assets/lower_equity_rg_graphs.png) in Total/OP/PROF, while Hispanic had [greater equity](./assets/greater_equity_rg_graphs.png) in Total/RX. The analysis decomposes results by service line, race group, and component measures to distinguish beneficial vs. restrictive drivers (prevention, price cuts vs. cost sharing, prior authorization, networks, delayed claims) and to guide targeted actions in outreach, transportation, and benefits counseling.
+
 **Naming convention**: For readability in charts, metric names appear as “Cost PMPM” (not “PMPM Cost”) so the metric comes first, letting readers match each chart to its metric at a glance.
 
 [![Executive summary](./assets/executive_summary.png)](./assets/executive_summary.png)
@@ -114,8 +115,6 @@ Across the three KPIs, Medicare's performance for beneficiaries declined sharply
 # Recommendations:
 
 Based on the insights and findings above, we recommend the Pennsylvania Department of Aging, specifically the Secretary's Office and the Office of Policy & Planning, consider the following:
-
- I need to update the first bullet to talk about PMPM Cost across SVC as a justification for changing the value
 
 ### 1) National Medicare Performance & Affordability
 * **Redefine PMPM Cost into 2 parts**: utilization (claims per member) multiplied by unit price (average cost per claim) for each svc to improve the KPI's ability to track performance; where prices are the main driver, expand site of care shifts and strengthen contracting, and where utilization falls, restore high-value ambulatory visits. This recommendation is supported by the sharp declines from 2009 to 2010 in the traditional **PMPM Cost** metric across all svcs **(Total -37.8%, OP -43.6%, PROF -35.8%, RX -40.2%)**. This data gives little insight into why performance is poor. In this scenario, **PMPM Cost** should be redefined as Count multiplied by Unit Price to pinpoint the controllable factor to act on, either the prices paid or the amount of care used, so actions match the true cause.
