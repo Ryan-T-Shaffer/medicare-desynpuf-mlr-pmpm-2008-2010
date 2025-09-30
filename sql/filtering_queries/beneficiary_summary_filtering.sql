@@ -2,14 +2,14 @@
   beneficiary_summary_filtering.sql  — DEMONSTRATION / HYPOTHETICAL EXAMPLE
   -------------------------------------------------------------------------
   Purpose (read me):
-    This file is a **hypothetical example** that demonstrates how I would filter
+    This file is a hypothetical example that demonstrates how I would filter
     and clean a beneficiary-level dataset in MySQL 8.x. It is included in the
     report to show employers my end-to-end filtering style (readability, data
     quality gates, instrumentation, and safe materialization), not to assert that
     these are the only “correct” cohort rules for your use case.
 
   Non-destructive guarantee:
-    • Source table is **not** modified.
+    • Source table is not modified.
     • The pipeline materializes to a demo table: `beneficiary_summary_filtered_demo`.
 
   What this demonstrates:
@@ -21,7 +21,7 @@
     • Optional view + indexes you’d typically add downstream.
 
   Notes:
-    • `SP_STATE_CODE` in DE-SynPUF uses **SSA codes**; PA = 39.
+    • `SP_STATE_CODE` in DE-SynPUF uses SSA codes; PA = 39.
     • Uncomment the “coverage” step if your analysis requires it.
     • Rename the destination table if you want this to be production, not demo.
 */
