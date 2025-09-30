@@ -28,7 +28,7 @@ The SQL queries used to inspect and clean the data for this analysis are availab
 
 Targeted SQL queries regarding various business questions can be found here [link](./sql/kpi_queries/kpi_query.sql#L67).
 
-An interactive Power BI dashboard used to report and explore sales trends can be found here [link].
+An interactive Power BI dashboard used to report and explore sales trends can be found here [link](https://app.powerbi.com/view?r=eyJrIjoiM2UwZDJhMzctYzE2Ny00NzIyLTk0ZDYtZjgxNmNlYTZjZjNlIiwidCI6ImVkYWIzNmFmLTY0NTEtNDA0Yi1hNDdlLTk1NjU5ZjNlNzEwNSIsImMiOjF9).
 
 # Data Structure & Initial Checks
 The database structure as seen below for the CMS DE-SynPUF Medicare dataset consists of 4 tables: beneficiary_summary, outpatient_claims, carrier_claims, and prescript_drug_events, with a total row count of [**228.6** Million records](./assets/DE_SynPUF_table_records_distribution.png) being used across all 4 tables. A description of each table is as follows:
