@@ -5,7 +5,7 @@ Contact: 20rs2002@gmail.com
 */
 /*
 File: sql/kpi_query.sql
-Purpose: Compute KPI rollups (PMPM Cost, Count PMPM, MLR) by year (2008-2010), service line (Total, OP, PROF, RX),
+Purpose: Compute KPI rollups (PMPM Cost, PMPM Count, MLR) by year (2008-2010), service line (Total, OP, PROF, RX),
          and race_group (AB plus named race groups). Returns a single table suitable for dashboards.
 
 Tested: MySQL 8.0+ (CTEs required)
@@ -274,7 +274,7 @@ SELECT
     END, 2
   ) AS cost_pmpm,
 
-  /* Count PMPM = Î£ Claim Count / Î£ Member Months */
+  /* PMPM Count = Î£ Claim Count / Î£ Member Months */
   ROUND(
     s.cnt /
     CASE
@@ -302,4 +302,5 @@ ORDER BY s.`year`, svc, s.race_group;
 
 ALTER TABLE kpi_year_final
   ADD PRIMARY KEY (`year`, svc, race_group);
+
 
