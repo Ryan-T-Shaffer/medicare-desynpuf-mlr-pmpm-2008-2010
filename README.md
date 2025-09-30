@@ -7,7 +7,7 @@
 - [Insights Deep Dive](#insights-deep-dive)
   - [MLR by SVC](#mlr-by-svc)
   - [MLR by Race Group and SVC](#mlr-by-race-group-and-svc)
-  - [PMPM Cost by Race Group and SVC](#cost-pmpm-by-race-group-and-svc)
+  - [PMPM Cost by Race Group and SVC](#pmpm-cost-by-race-group-and-svc)
   - [PMPM Count by Race Group and SVC](#pmpm-count-by-race-group-and-svc)
 - [Recommendations](#recommendations)
 - [Assumptions and Caveats](#assumptions-and-caveats)
