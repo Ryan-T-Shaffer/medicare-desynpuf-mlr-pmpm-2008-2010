@@ -17,6 +17,8 @@
 
 The Pennsylvania Department of Aging, specifically the Secretary's Office and the Office of Policy & Planning, engaged a third-party healthcare analytics consultant to develop a dashboard and report. The project assesses the performance, accessibility, and equity of Medicare Parts B and D and Total (all service lines) at the national level, with the intent to later compare these findings to Pennsylvania's state-level performance. The analysis uses the [CMS DE-SynPUF Medicare 2008-2010 dataset](https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files/cms-2008-2010-data-entrepreneurs-synthetic-public-use-file-de-synpuf) to measure year-over-year (YoY) trends in **PMPM Cost**, **PMPM Count**, and **Medical Loss Ratio (**MLR**)** across Medicare service lines (svc) and 5 race groups. Given the parallel KPI declines by 2010, the analysis considers whether these trends reflect access barriers (cost sharing, prior authorization, network limits) or beneficial shifts (prevention, price reductions). The findings aim to guide decisions on outreach funding, transportation support, and benefits counseling.
 
+*Not actually affiliated with the Pennsylvania Department of Aging*
+
 *How insights are evaluated in the report on the following key areas*:
 
 - **MLR Trends by SVC:** The amount Medicare spends yearly on healthcare compared to the amount Medicare charges beneficiaries in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and Total. 
