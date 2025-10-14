@@ -27,7 +27,7 @@ The Pennsylvania Department of Aging, specifically the Secretary's Office and th
 - **PMPM Count Trends by SVC & Race Group:** The number of claims on average each beneficiary uses per month in order to get care.
 
 
-**An interactive Power BI dashboard** for reporting and exploring KPI trends is available [here](https://app.powerbi.com/view?r=eyJrIjoiM2UwZDJhMzctYzE2Ny00NzIyLTk0ZDYtZjgxNmNlYTZjZjNlIiwidCI6ImVkYWIzNmFmLTY0NTEtNDA0Yi1hNDdlLTk1NjU5ZjNlNzEwNSIsImMiOjF9).
+**An interactive Power BI dashboard** for reporting and exploring KPI trends is available [here](https://app.powerbi.com/view?r=eyJrIjoiODFmMGJhOGUtZDE4NS00NDVhLWFmNDYtZmE5NTVkMGMxMjQ3IiwidCI6ImVkYWIzNmFmLTY0NTEtNDA0Yi1hNDdlLTk1NjU5ZjNlNzEwNSIsImMiOjF9).
 
 The **SQL query that calculates the KPIs** (MLR, PMPM Cost, PMPM Count) is available [here](./sql/kpi_queries/kpi_query.sql#L67).
 
