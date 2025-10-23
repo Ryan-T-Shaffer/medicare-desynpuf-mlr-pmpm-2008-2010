@@ -6,9 +6,9 @@
 - [Executive Summary](#executive-summary)
 - [Insights Deep Dive](#insights-deep-dive)
   - [MLR by Service Line](#mlr-by-svc)
-  - [MLR by Race Group and Service Line](#mlr-by-race-group-and-svc)
-  - [PMPM Cost by Race Group and Service Line](#pmpm-cost-by-race-group-and-svc)
-  - [PMPM Count by Race Group and Service Line](#pmpm-count-by-race-group-and-svc)
+  - [MLR by Service Line then Race Group](#mlr-by-svc-then-race-group)
+  - [PMPM Cost by Service Line then Race Group](#pmpm-cost-by-svc-then-race-group)
+  - [PMPM Count by Service Line then Race Group](#pmpm-count-by-svc-then-race-group)
 - [Recommendations](#recommendations)
 - [Assumptions and Caveats](#assumptions-and-caveats)
 - [Copyright](#Copyright)
@@ -22,9 +22,9 @@ The Pennsylvania Department of Aging, specifically the Secretary's Office and th
 *How insights are evaluated in the report on the following key areas*:
 
 - **MLR Trends by SVC:** The amount Medicare spends yearly on healthcare compared to the amount Medicare charges beneficiaries in premiums to pay for it. SVCs analyzed: Outpatient (OP), Carrier (PROF), Prescription Drug Events (RX), and Total. 
-- **MLR Trends by Race Group & SVC:** **MLR** by race group (All Beneficiaries, Caucasian, Black, Hispanic, Other) analyzed within each svc to find deeper segment-level differences.
-- **PMPM Cost Trends by SVC & Race Group:** Medicare's average spending on care for each beneficiary every month for a specific year.
-- **PMPM Count Trends by SVC & Race Group:** The number of claims on average each beneficiary uses per month in order to get care.
+- **MLR Trends by SVC then Race Group:** **MLR** by race group (All Beneficiaries, Caucasian, Black, Hispanic, Other) analyzed within each svc to find deeper segment-level differences.
+- **PMPM Cost Trends by SVC then Race Group:** Medicare's average spending on care for each beneficiary every month for a specific year.
+- **PMPM Count Trends by SVC then Race Group:** The number of claims on average each beneficiary uses per month in order to get care.
 
 
 **An interactive Power BI dashboard** for reporting and exploring KPI trends is available [here](https://app.powerbi.com/view?r=eyJrIjoiODFmMGJhOGUtZDE4NS00NDVhLWFmNDYtZmE5NTVkMGMxMjQ3IiwidCI6ImVkYWIzNmFmLTY0NTEtNDA0Yi1hNDdlLTk1NjU5ZjNlNzEwNSIsImMiOjF9).
@@ -74,7 +74,7 @@ Across the three KPIs, Medicare's performance for beneficiaries declined sharply
 
 [![Insights Deep Dive](./assets/data_reads1.png)](./assets/data_reads1.png)
 
-### **MLR** by Race Group and SVC:
+### **MLR** by SVC then Race Group:
 
 - Total **MLR** by race group: All Beneficiaries (AB), Black, Caucasian, and Hispanic are tightly clustered, peaking in 2009 at **301.0-305.2%**. The Other group peaks lower at **272.7%** (vs. AB **301%**) in 2009. In 2010 all groups declined by a similar margin (YoY **-44.1%** to **-45.6%**).
 
@@ -87,7 +87,7 @@ Across the three KPIs, Medicare's performance for beneficiaries declined sharply
 **Tip:** To see these referenced values, hover over the graphs while in the dashboard. The tooltip on these graphs shows both the actual values and the YoY %Δ, while other graphs show only the actual values.
 [![Insights Deep Dive](./assets/data_reads2.png)](./assets/data_reads2.png)
 
-### **PMPM Cost** by Race Group and SVC:
+### **PMPM Cost** by SVC then Race Group:
 
 - **PMPM Cost** uses Allowed Cost as its numerator, the same claims-dollar numerator as **MLR**, divided by member-months. Because the numerator trends are shared, **PMPM Cost** largely mirrors the **MLR** pattern: PROF, OP, and Total peak in 2009 at **$167.4**, **$92.4**, and **$359.8 PMPM**, then drop sharply in 2010, while RX peaks earlier at **$154.2 PMPM** in 2008 and declines thereafter. In 2010, **PMPM Cost** fell YoY across all service lines: Total **-37.8%**, OP **-43.6%**, PROF **-35.8%**, RX **-40.2%**.
 
@@ -100,7 +100,7 @@ Across the three KPIs, Medicare's performance for beneficiaries declined sharply
 [![Insights Deep Dive](./assets/data_reads3.png)](./assets/data_reads3.png)
 
 
-### **PMPM Count** by Race Group and SVC:
+### **PMPM Count** by SVC then Race Group:
 
 - **PMPM Count** uses the same denominator as **PMPM Cost**, member-months, but a different numerator (claim counts, not dollars). Even so, it mirrors the **MLR**/**PMPM Cost** pattern: PROF, OP, and Total peak in 2009 at **1.5**, **0.3**, and **3.4 claims PMPM**, then drop sharply in 2010, while RX peaks earlier at **2.5** in 2008 and declines thereafter. In 2010, **PMPM Count** falls YoY across all service lines: Total **-35.8%**, OP **-44.0%**, PROF **-36.1%**, RX **-39.7%**.
 
