@@ -27,9 +27,11 @@ The Pennsylvania Department of Aging, specifically the Secretary's Office and th
 
 **An interactive Power BI dashboard** for reporting and exploring KPI trends is available [here](https://app.powerbi.com/view?r=eyJrIjoiODFmMGJhOGUtZDE4NS00NDVhLWFmNDYtZmE5NTVkMGMxMjQ3IiwidCI6ImVkYWIzNmFmLTY0NTEtNDA0Yi1hNDdlLTk1NjU5ZjNlNzEwNSIsImMiOjF9).
 
-The **SQL query that calculates the KPIs** (MLR, PMPM Cost, PMPM Count) is available [here](./sql/kpi_queries/kpi_query.sql#L67).
+**The data pipeline** I created to load in all 220 million rows of raw Medicare data is availible [here](https://github.com/Ryan-T-Shaffer/medicare-kpi-validation-pipeline#Overview)
 
-The SQL queries used to **inspect and clean the data** for this analysis are available [here](./sql/filtering_queries/beneficiary_summary_filtering.sql#L38).
+The **SQL query that calculates the KPIs** (MLR, PMPM Cost, PMPM Count) is available [here](https://github.com/Ryan-T-Shaffer/medicare-kpi-validation-pipeline/blob/main/src/05_kpi_calc_sql/kpi_calc_query.sql).
+
+The SQL queries used to **inspect and clean the data** for this analysis are available [here](./sql/data_cleaning_before_kpi_calc.sql#L77-L227).
 
 # Data Structure & Initial Checks
 The database structure as seen below for the CMS DE-SynPUF Medicare dataset consists of 4 tables: beneficiary_summary, outpatient_claims, carrier_claims, and prescript_drug_events, with a total row count of [**228.6** Million records](./assets/DE_SynPUF_table_records_distribution.png) being used across all 4 tables. A description of each table is as follows:
@@ -39,10 +41,10 @@ The database structure as seen below for the CMS DE-SynPUF Medicare dataset cons
 - **carrier_claims:** Each row is a unique claim from a  beneficiary in one of these areas: doctor office visits & imaging, minor procedures, pathology tests, and physician-administered drugs. This table is also under pt. B of Medicare. This table covers: claim info, ICD claim & line diagnosis codes, physician info, provider tax numbers, HCPCS cost codes, different types of payment amounts.
 - **prescript_drug_events:** Each row is a unique claim about a prescription drug order from a specific  beneficiary that was handled by the pharmacies. This table solely covers pt. D of Medicare. This table covers: the type of drug dispensed, the quantity, the day supply, the patient payment amount, and the gross drug cost.
 
-ERD for CMS 2008-2010 DE-SynPUF
-[<img src="./assets/desynpuf_medicare_db.png" alt="Entity Relationship Diagram" width="800">](./assets/erd.png)
+## ERD for KPI Queries on CMS Medicare 2008–2010 DE-SynPUF
+<img src="./assets/kpi_calc_query_ERD_diagram.png" alt="Entity Relationship Diagram for CMS 2008-2010 DE-SynPUF KPI tables" width="800">
 
-***Disclaimer:*** The outpatient_claims and carrier_claims tables had columns removed from the ERD diagram in order to fit in a singular screenshot because each table had 80+ columns. All removed columns were non-essential to the ERD.
+***Disclaimer:*** This ERD only contains the columns that are directly used from each table in the KPI aggregation queries. A more descriptive ERD is available here: [desynpuf_medicare_db_ERD](./assets/desynpuf_medicare_db_ERD.png). However, even the more descriptive ERD is still simplified. The `outpatient_claims` and `carrier_claims` tables each had 80+ columns removed from the diagram so the ERD could fit into a single screenshot. The removed columns were not essential to this report.
 
 
 # Executive Summary
